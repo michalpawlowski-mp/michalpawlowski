@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "./Nav/Nav.tsx";
 import { Link } from "react-router-dom";
-import { useNavigation } from "./useNavigation.ts";
+import { useNavigation } from "../../hook/useNavigation.ts";
 
 const Header: React.FC = () => {
   const { isNavOpen, navRef, buttonRef, toggleNav } = useNavigation();
