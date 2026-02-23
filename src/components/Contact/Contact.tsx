@@ -18,10 +18,7 @@ const Contact: React.FC = () => {
 
   return (
     <section id="contact" className="w-full p-2 flex flex-col items-center">
-      <h2 className="text-4xl flex font-bold mb-4 text-white">
-        Opcje kontaktu
-      </h2>
-
+      <h2 className="text-4xl flex font-bold mb-4 text-white">Opcje kontaktu</h2>
       <div className="w-full flex md:flex-row flex-col items-center justify-center m-2">
         <div className="bg-white/20 flex rounded-full overflow-hidden m-1">
           <a
@@ -54,11 +51,7 @@ const Contact: React.FC = () => {
           </div>
         </div>
         <div className="bg-white/20 flex rounded-full justify-center items-center overflow-hidden m-1 hover:bg-white/30 transition duration-300 ease-in-out cursor-pointer">
-          <img
-            src={linkedin}
-            alt="mój profil linkedin"
-            className="py-3 pl-2 invert "
-          />
+          <img src={linkedin} alt="mój profil linkedin" className="py-3 pl-2 invert " />
           <a
             className="p-4 "
             target="_blank"

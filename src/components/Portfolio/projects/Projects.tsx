@@ -35,7 +35,6 @@ const ProjectsList: React.FC = () => {
       <div className="flex flex-col sm:flex-wrap sm:flex-row w-full justify-center gap-4">
         {allProjects.slice(0, visibleCount)}
       </div>
-
       {visibleCount < allProjects.length && (
         <button
           type="button"

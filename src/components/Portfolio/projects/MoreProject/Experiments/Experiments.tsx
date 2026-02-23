@@ -1,7 +1,7 @@
 import { codepen, uiverse } from "../../../../../assets/imports";
 
 const Experiments = () => {
-  return [
+  return (
     <>
       <div className="flex items-center justify-center w-full">
         <div className="w-1/4 md:w-1/3 h-px border-white bg-white rounded-full"></div>
@@ -30,8 +30,8 @@ const Experiments = () => {
           MP.Dev
         </a>
       </div>
-    </>,
-  ];
+    </>
+  );
 };
 
 export default Experiments;
