@@ -1,6 +1,7 @@
 import React from "react";
 import { html, ts, sass, npm, node, xor, xo } from "../../../../../assets/imports/index";
 import LinksPanel from "../../Link/LinksPanel";
+import ToggleButton from "../../../../UI/ToggleButton/ToggleButton";
 
 interface XoProps {
   toggleVisibility: () => void;
@@ -8,16 +9,10 @@ interface XoProps {
 
 const XoPanel: React.FC<XoProps> = ({ toggleVisibility }) => {
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center z-40 items-center backdrop-blur-sm">
+    <div className="fixed inset-0 bg-black/50 flex justify-center z-40 items-center backdrop-blur-sm">
       <div className="bg-white/10 shadow-inner shadow-black p-2 rounded-2xl mx-2 max-w-3xl w-max h-5/6 overflow-auto scrollbar-none">
         <div className="flex w-full items-center">
-          <button
-            type="button"
-            onClick={toggleVisibility}
-            className="p-2 bg-white/10 text-white rounded-xl"
-          >
-            Zamknij
-          </button>
+          <ToggleButton content="Zamknij" onClick={toggleVisibility} />
           <h5 className="text-2xl text-center m-auto">Kółko i krzyżyk</h5>
         </div>
         <div className="flex flex-col text-left  p-2 my-3">

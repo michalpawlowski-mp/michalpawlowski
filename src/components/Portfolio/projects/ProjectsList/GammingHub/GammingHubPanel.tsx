@@ -9,19 +9,14 @@ import {
   html,
   js,
 } from "../../../../../assets/imports";
+import ToggleButton from "../../../../UI/ToggleButton/ToggleButton";
 
 const GamingHubPanel: React.FC<ProjectsProps> = ({ toggleVisibility }) => {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-40 backdrop-blur-sm">
       <div className="bg-white/10 shadow-inner shadow-black p-2 rounded-2xl mx-2 max-w-3xl w-full h-5/6 overflow-auto scrollbar-none">
         <div className="flex w-full items-center">
-          <button
-            onClick={toggleVisibility}
-            className="p-2 bg-white/10 text-white rounded-xl"
-            type="button"
-          >
-            Zamknij
-          </button>
+          <ToggleButton content="Zamknij" onClick={toggleVisibility} />
           <h4 className="text-2xl text-center m-auto">GamingHub</h4>
         </div>
 

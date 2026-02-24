@@ -10,6 +10,7 @@ import {
   css,
   js,
 } from "../../../../../assets/imports";
+import ToggleButton from "../../../../UI/ToggleButton/ToggleButton";
 
 const NotebookPanel: React.FC<ProjectsProps> = ({ toggleVisibility }) => {
   return (
@@ -17,13 +18,7 @@ const NotebookPanel: React.FC<ProjectsProps> = ({ toggleVisibility }) => {
       <div className="bg-white/20 shadow-inner shadow-black p-2 rounded-2xl mx-2 max-w-3xl w-full h-5/6 overflow-auto scrollbar-none ">
         {/* Nagłówek */}
         <div className="flex w-full items-center">
-          <button
-            onClick={toggleVisibility}
-            className="p-2 bg-white/10 text-white rounded-xl"
-            type="button"
-          >
-            Zamknij
-          </button>
+          <ToggleButton content="Zamknij" onClick={toggleVisibility} />
           <h4 className="text-2xl text-center m-auto">Notatnik</h4>
         </div>
 

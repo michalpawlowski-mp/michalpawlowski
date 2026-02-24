@@ -2,6 +2,7 @@ import React from "react";
 import { html, js, css, npm, node, todo } from "../../../../../assets/imports/index";
 import LinksPanel from "../../Link/LinksPanel";
 import ProjectsProps from "../../../../../types/ProjectsProps";
+import ToggleButton from "../../../../UI/ToggleButton/ToggleButton";
 
 const TodoListPanel: React.FC<ProjectsProps> = ({ toggleVisibility }) => {
   return (
@@ -9,13 +10,7 @@ const TodoListPanel: React.FC<ProjectsProps> = ({ toggleVisibility }) => {
       <div className="bg-white/10 shadow-inner shadow-black p-2 rounded-2xl mx-2 max-w-3xl w-max h-5/6 overflow-auto scrollbar-none">
         {/* Header */}
         <div className="flex w-full items-center">
-          <button
-            type="button"
-            onClick={toggleVisibility}
-            className="p-2 bg-white/10 text-white rounded-xl "
-          >
-            Zamknij
-          </button>
+          <ToggleButton content="Zamknij" onClick={toggleVisibility} />
           <h5 className="text-2xl text-center m-auto">Projekt: Lista zadań</h5>
         </div>
 
