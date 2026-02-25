@@ -13,3 +13,14 @@ export const calculateDuration = (start: Date, end: Date = new Date()) => {
   if (yearText && monthText) return `${yearText} i ${monthText}`;
   return yearText || monthText || "0 mies.";
 };
+
+export const calculateAge = (birthDate: string): number => {
+  const birth = new Date(birthDate);
+  const today = new Date();
+
+  const hasHadBirthdayThisYear =
+    today.getMonth() > birth.getMonth() ||
+    (today.getMonth() === birth.getMonth() && today.getDate() >= birth.getDate());
+
+  return today.getFullYear() - birth.getFullYear() - (hasHadBirthdayThisYear ? 0 : 1);
+};
