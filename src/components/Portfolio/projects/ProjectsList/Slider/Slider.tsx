@@ -1,7 +1,7 @@
 import { slider, html, sass, js } from "../../../../../assets/imports/index";
 import Links from "../../Link/Links";
 import SliderPanel from "./SliderPanel";
-import { useToggle } from "../../../../../hook/useToggle";
+import { useToggle } from "../../../../../hooks/useToggle";
 
 const Slider: React.FC = () => {
   const { isVisible, toggleVisibility } = useToggle();

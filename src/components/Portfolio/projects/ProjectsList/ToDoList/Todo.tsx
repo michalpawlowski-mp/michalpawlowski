@@ -1,7 +1,7 @@
 import { todo, html, css, js } from "../../../../../assets/imports/index";
 import LinkPanel from "../../Link/Links";
 import ToDoListPanel from "./ToDoListPanel";
-import { useToggle } from "../../../../../hook/useToggle";
+import { useToggle } from "../../../../../hooks/useToggle";
 
 const Todo: React.FC = () => {
   const { isVisible, toggleVisibility } = useToggle();

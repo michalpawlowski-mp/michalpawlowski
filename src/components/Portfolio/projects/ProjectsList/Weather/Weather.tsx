@@ -1,6 +1,6 @@
 import { wApp, html, less, js } from "../../../../../assets/imports/index";
 import Links from "../../Link/Links";
-import { useToggle } from "../../../../../hook/useToggle";
+import { useToggle } from "../../../../../hooks/useToggle";
 import ProjectThreePanel from "./WeatherPanel";
 
 const Weather: React.FC = () => {

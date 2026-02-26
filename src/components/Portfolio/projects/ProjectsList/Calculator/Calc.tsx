@@ -1,7 +1,7 @@
 import { html, cal, css, js } from "../../../../../assets/imports/index";
 import LinkPanel from "../../Link/Links";
 import CalcPanel from "./CalcPanel";
-import { useToggle } from "../../../../../hook/useToggle";
+import { useToggle } from "../../../../../hooks/useToggle";
 
 const Calc: React.FC = () => {
   const { isVisible, toggleVisibility } = useToggle();

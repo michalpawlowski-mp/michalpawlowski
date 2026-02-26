@@ -1,6 +1,6 @@
 import { notebook, html, css, js } from "../../../../../assets/imports/index";
 import Links from "../../Link/Links";
-import { useToggle } from "../../../../../hook/useToggle";
+import { useToggle } from "../../../../../hooks/useToggle";
 import NotebookPanel from "./NotebookPanel";
 
 const Notebook: React.FC = () => {

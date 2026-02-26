@@ -1,6 +1,6 @@
 import { xo, html, css, ts } from "../../../../../assets/imports/index";
 import Links from "../../Link/Links";
-import { useToggle } from "../../../../../hook/useToggle";
+import { useToggle } from "../../../../../hooks/useToggle";
 import XoPanel from "./XoPanel";
 
 const XO: React.FC = () => {

@@ -1,4 +1,4 @@
-import { useToggle } from "../../../hook/useToggle";
+import { useToggle } from "../../../hooks/useToggle";
 import { ExampleProjectProps } from "./ExampleProject.data";
 import ToggleButton from "../../UI/ToggleButton/ToggleButton";
 

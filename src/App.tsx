@@ -5,7 +5,7 @@ import About from "./components/About/About.tsx";
 import Contact from "./components/Contact/Contact.tsx";
 import Portfolio from "./components/Portfolio/Portfolio.tsx";
 import Footer from "./components/Footer/Footer.tsx";
-import "./style/style.css";
+import "./styles/style.css";
 
 const App = () => {
   return (

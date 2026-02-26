@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { calculateAge } from "../../Utils/date";
+import { calculateAge } from "../../../Utils/date";
 
 const Description: React.FC = () => {
   const age = calculateAge("2000-05-29");

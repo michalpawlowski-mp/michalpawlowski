@@ -1,7 +1,7 @@
 import { gaminghub, html, css, js } from "../../../../../assets/imports/index";
 import Links from "../../Link/Links";
 import GamingHubPanel from "./GammingHubPanel";
-import { useToggle } from "../../../../../hook/useToggle";
+import { useToggle } from "../../../../../hooks/useToggle";
 
 const GamingHub: React.FC = () => {
   const { isVisible, toggleVisibility } = useToggle();
