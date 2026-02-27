@@ -4,7 +4,7 @@ import ExampleProjects from "./ExampleProject/ExampleProjects";
 
 const Main: React.FC = () => {
   return (
-    <main className="flex flex-col items-center md:px-4 px-2">
+    <main className="flex flex-col items-center">
       <HeroSection />
       <ExampleProjects />
       <AboutSection />
