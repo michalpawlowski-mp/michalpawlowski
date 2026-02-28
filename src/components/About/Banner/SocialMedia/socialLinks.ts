@@ -10,6 +10,7 @@ import {
 } from "../../../../assets/imports/index";
 
 export type SocialLink = {
+  id: string;
   href: string;
   icon: string;
   alt: string;
@@ -17,43 +18,51 @@ export type SocialLink = {
 
 export const socialLinks: SocialLink[] = [
   {
+    id: "linkedin",
     href: "https://www.linkedin.com/in/michalpawlowski-mp/",
     icon: linkedin,
-    alt: "Link do mojego profilu na Linked",
+    alt: "Profil LinkedIn",
   },
   {
+    id: "github",
     href: "https://github.com/michalpawlowski-mp",
     icon: github,
-    alt: "Link do mojego profilu na Github",
+    alt: "Profil GitHub",
   },
   {
+    id: "instagram",
     href: "https://www.instagram.com/mp.dev_/",
     icon: ig,
-    alt: "Link do mojego profilu na Instagramie",
+    alt: "Profil Instagram",
   },
   {
+    id: "x",
     href: "https://x.com/mp_dev_?s=21",
     icon: x,
-    alt: "Link do mojego profilu na X",
+    alt: "Profil X",
   },
   {
+    id: "youtube",
     href: "https://www.youtube.com/@MP-devJS",
     icon: yt,
-    alt: "Link do mojego kanału YouTube",
+    alt: "Kanał YouTube",
   },
   {
+    id: "tiktok",
     href: "https://www.tiktok.com/@mp.dev_",
     icon: tiktok,
-    alt: "Link do mojego profilu na TikToka",
+    alt: "Profil TikTok",
   },
   {
+    id: "threads",
     href: "https://www.threads.net/@mp.dev_",
     icon: threads,
-    alt: "Link do mojego profilu na Threads",
+    alt: "Profil Threads",
   },
   {
+    id: "facebook",
     href: "https://www.facebook.com/profile.php?id=61572716596188",
     icon: fb,
-    alt: "Link do mojego profilu Facebook",
+    alt: "Profil Facebook",
   },
 ];

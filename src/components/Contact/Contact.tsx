@@ -51,7 +51,7 @@ const Contact: React.FC = () => {
           </div>
         </div>
         <div className="bg-white/20 flex rounded-full justify-center items-center overflow-hidden m-1 hover:bg-white/30 transition duration-300 ease-in-out cursor-pointer">
-          <img src={linkedin} alt="mój profil linkedin" className="py-3 pl-2 invert" />
+          <img src={linkedin} alt="Profil linkedin" className="py-3 pl-2 invert" />
           <a
             className="p-4"
             target="_blank"
