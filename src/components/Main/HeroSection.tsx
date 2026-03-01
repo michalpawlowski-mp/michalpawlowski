@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
           wyzwań w projektach komercyjnych, w których mogę rozwijać kompetencje
           frontendowe i współtworzyć nowoczesne, intuicyjne interfejsy.
         </p>
-        <div className="flex w-full justify-center items-center gap-3">
+        <div className="flex w-full justify-center items-center md:gap-5 gap-2">
           <Button link={"/contact"} content="Kontakt ze mną" />
           <Button
             link={"https://michalpawlowski-mp.github.io/Curriculum-Vitae/"}

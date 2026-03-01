@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { copy } from "../../assets/imports";
-import { contactData } from "./contakt.data";
+import { contactData } from "./contact.data";
 
 const Contact: React.FC = () => {
   const [notification, setNotification] = useState<string | null>(null);

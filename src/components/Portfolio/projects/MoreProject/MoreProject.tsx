@@ -7,7 +7,9 @@ const MoreProjects = () => {
         <div key={index} className="mb-2">
           <div className="flex items-center justify-center w-full mb-3">
             <div className="flex-1 h-px bg-linear-to-r from-transparent via-white/50 to-transparent"></div>
-            <h2 className="px-6 text-lg font-semibold tracking-wide">{section.title}</h2>
+            <h2 className="px-6 text-lg font-semibold tracking-wide">
+              {section.title}
+            </h2>
             <div className="flex-1 h-px bg-linear-to-r from-transparent via-white/50 to-transparent"></div>
           </div>
           <div className="w-full m-2 flex justify-center flex-wrap">
