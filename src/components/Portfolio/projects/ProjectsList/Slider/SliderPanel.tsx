@@ -1,5 +1,12 @@
 import React from "react";
-import { html, js, sass, npm, node, slider } from "../../../../../assets/imports/index";
+import {
+  html,
+  js,
+  sass,
+  npm,
+  node,
+  slider,
+} from "../../../../../assets/imports/index";
 import LinksPanel from "../../Link/LinksPanel";
 import ProjectsProps from "../../../../../types/ProjectsProps";
 import ToggleButton from "../../../../UI/ToggleButton/ToggleButton";
@@ -11,7 +18,7 @@ const SliderPanel: React.FC<ProjectsProps> = ({ toggleVisibility }) => {
         {/* Header */}
         <div className="flex w-full items-center">
           <ToggleButton content="Zamknij" onClick={toggleVisibility} />
-          <h5 className="text-2xl text-center m-auto">Projekt: Slider</h5>
+          <h5 className="text-2xl text-center m-auto">Slider</h5>
         </div>
 
         {/* Funkcjonalności */}
@@ -32,14 +39,15 @@ const SliderPanel: React.FC<ProjectsProps> = ({ toggleVisibility }) => {
         <div className="flex flex-col text-left">
           <p className="text-xl">Opis</p>
           <p className="text-sm mt-2">
-            Projekt przedstawia prosty **slider zdjęć** zbudowany w czystym JavaScripcie,
-            HTML i SCSS. Użytkownik może zmieniać zdjęcia za pomocą strzałek lub
-            nawigacyjnych kropek. Struktura opiera się na prostych klasach CSS, a skrypt
-            obsługuje logikę zmiany aktywnego slajdu.
+            Projekt przedstawia prosty **slider zdjęć** zbudowany w czystym
+            JavaScripcie, HTML i SCSS. Użytkownik może zmieniać zdjęcia za
+            pomocą strzałek lub nawigacyjnych kropek. Struktura opiera się na
+            prostych klasach CSS, a skrypt obsługuje logikę zmiany aktywnego
+            slajdu.
           </p>
           <p className="text-sm my-2">
-            Projekt jest responsywny i zoptymalizowany do działania w przeglądarce bez
-            dodatkowych bibliotek.
+            Projekt jest responsywny i zoptymalizowany do działania w
+            przeglądarce bez dodatkowych bibliotek.
           </p>
         </div>
 
@@ -72,7 +80,9 @@ const SliderPanel: React.FC<ProjectsProps> = ({ toggleVisibility }) => {
 
           {/* Narzędzia developerskie */}
           <div className="flex flex-wrap justify-center">
-            <p className="w-full text-left text-xl">Użyte narzędzia developerskie:</p>
+            <p className="w-full text-left text-xl">
+              Użyte narzędzia developerskie:
+            </p>
             <div className="w-[125px] bg-black/50 p-1 rounded-full m-1 flex items-center justify-center">
               <img src={npm} alt="ikonka npm" className="w-[40px] mx-2" />
               npm

@@ -22,7 +22,7 @@ const MoreProjects = () => {
                 className="bg-white/20 p-2 pe-4 m-4 rounded-3xl flex items-center"
               >
                 <img
-                  className={`me-3 ${link.imgClass ?? ""}`}
+                  className="me-3 rounded-full"
                   src={link.icon}
                   alt={link.label}
                 />

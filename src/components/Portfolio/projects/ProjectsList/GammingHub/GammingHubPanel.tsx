@@ -24,8 +24,8 @@ const GamingHubPanel: React.FC<ProjectsProps> = ({ toggleVisibility }) => {
           <div className="flex flex-col text-left my-4">
             <p className="text-xl">Funkcjonalności:</p>
             <p className="text-sm mt-1">
-              ✅ Sortowanie i filtrowanie treści według kategorii (gry, aktualności,
-              poradniki itp.)
+              ✅ Sortowanie i filtrowanie treści według kategorii (gry,
+              aktualności, poradniki itp.)
             </p>
             <p className="text-sm mt-1">
               ✅ Możliwość zapisania ulubionych elementów (np. linków do gier)
@@ -48,25 +48,26 @@ const GamingHubPanel: React.FC<ProjectsProps> = ({ toggleVisibility }) => {
           <div className="flex flex-col text-left">
             <p className="text-xl">Opis</p>
             <p className="text-sm mt-2">
-              Platforma umożliwia użytkownikom przeglądanie różnych kategorii treści,
-              takich jak gry, aktualności i poradniki. Każdy użytkownik może filtrować,
-              sortować i przeszukiwać te treści w prosty sposób. Użytkownicy mogą również
-              zapisywać ulubione linki do stron z grami lub sklepów, co ułatwia szybki
-              dostęp do interesujących ofert.
+              Platforma umożliwia użytkownikom przeglądanie różnych kategorii
+              treści, takich jak gry, aktualności i poradniki. Każdy użytkownik
+              może filtrować, sortować i przeszukiwać te treści w prosty sposób.
+              Użytkownicy mogą również zapisywać ulubione linki do stron z grami
+              lub sklepów, co ułatwia szybki dostęp do interesujących ofert.
             </p>
             <p className="text-sm my-2">
-              Dodatkowo, kod JavaScript umożliwia dynamiczną zmianę aktywnych opcji,
-              takich jak sortowanie czy zmiana statusu "ulubione". Strona wykorzystuje
-              również style CSS, aby była responsywna i dostosowana do wyświetlania na
-              różnych urządzeniach (mobilnych, desktopowych).
+              Dodatkowo, kod JavaScript umożliwia dynamiczną zmianę aktywnych
+              opcji, takich jak sortowanie czy zmiana statusu "ulubione". Strona
+              wykorzystuje również style CSS, aby była responsywna i dostosowana
+              do wyświetlania na różnych urządzeniach (mobilnych, desktopowych).
             </p>
             <p className="text-sm my-2 pb-2">
-              Strona została zaprojektowana w sposób prosty i intuicyjny, dostarczając
-              użytkownikom przyjemne doświadczenie przeglądania. Dzięki dynamicznym
-              interakcjom, użytkownicy mogą szybko znaleźć interesujące ich treści i łatwo
-              przechodzić między kategoriami. Projekt ma na celu stworzenie centralnego
-              źródła informacji, które będzie pełnić rolę bazy zasobów i linków dla
-              każdego pasjonata gier.
+              Strona została zaprojektowana w sposób prosty i intuicyjny,
+              dostarczając użytkownikom przyjemne doświadczenie przeglądania.
+              Dzięki dynamicznym interakcjom, użytkownicy mogą szybko znaleźć
+              interesujące ich treści i łatwo przechodzić między kategoriami.
+              Projekt ma na celu stworzenie centralnego źródła informacji, które
+              będzie pełnić rolę bazy zasobów i linków dla każdego pasjonata
+              gier.
             </p>
           </div>
         </div>
@@ -78,7 +79,7 @@ const GamingHubPanel: React.FC<ProjectsProps> = ({ toggleVisibility }) => {
             <img src={gaminghubart} alt="slide 1" className="w-full" />
           </div>
           <div className="snap-center flex-shrink-0 w-full">
-            <img src={gaminghubshop} alt="slide 2" className="w-full" />
+            <img src={gaminghubart} alt="slide 2" className="w-full" />
           </div>
         </div>
 

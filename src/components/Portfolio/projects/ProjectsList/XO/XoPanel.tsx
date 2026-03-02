@@ -1,5 +1,13 @@
 import React from "react";
-import { html, ts, sass, npm, node, xor, xo } from "../../../../../assets/imports/index";
+import {
+  html,
+  ts,
+  sass,
+  npm,
+  node,
+  xor,
+  xo,
+} from "../../../../../assets/imports/index";
 import LinksPanel from "../../Link/LinksPanel";
 import ToggleButton from "../../../../UI/ToggleButton/ToggleButton";
 
@@ -21,23 +29,28 @@ const XoPanel: React.FC<XoProps> = ({ toggleVisibility }) => {
             ✅ Interaktywna plansza 3x3 do gry w „Kółko i Krzyżyk”
           </p>
           <p className="text-sm mt-1">✅ Dynamiczna zmiana gracza (X i O)</p>
-          <p className="text-sm mt-1">✅ Weryfikacja wygranej oraz możliwość remisu</p>
+          <p className="text-sm mt-1">
+            ✅ Weryfikacja wygranej oraz możliwość remisu
+          </p>
           <p className="text-sm mt-1">
             ✅ Komunikaty informujące o stanie gry (czyja kolej, kto wygrał)
           </p>
-          <p className="text-sm mt-1">✅ Możliwość restartu gry jednym przyciskiem</p>
+          <p className="text-sm mt-1">
+            ✅ Możliwość restartu gry jednym przyciskiem
+          </p>
         </div>
         <div className="flex flex-col text-left">
           <p className="text-xl">Opis</p>
           <p className="text-sm mt-2">
-            Gra rozpoczyna się od planszy 3x3, na której gracze na zmianę umieszczają
-            swoje symbole (X lub O). Po każdym ruchu aplikacja sprawdza, czy któryś z
-            graczy wygrał lub czy nastąpił remis. Po zakończeniu gry można uruchomić nową
-            rozgrywkę za pomocą przycisku „Restart”.
+            Gra rozpoczyna się od planszy 3x3, na której gracze na zmianę
+            umieszczają swoje symbole (X lub O). Po każdym ruchu aplikacja
+            sprawdza, czy któryś z graczy wygrał lub czy nastąpił remis. Po
+            zakończeniu gry można uruchomić nową rozgrywkę za pomocą przycisku
+            „Restart”.
           </p>
           <p className="text-sm my-2">
-            Projekt został zaprojektowany z myślą o prostocie i wygodzie użytkowania,
-            oferując płynną animację oraz intuicyjne interakcje..
+            Projekt został zaprojektowany z myślą o prostocie i wygodzie
+            użytkowania, oferując płynną animację oraz intuicyjne interakcje..
           </p>
         </div>
         <div className="flex mt-1 gap-1">
@@ -69,13 +82,23 @@ const XoPanel: React.FC<XoProps> = ({ toggleVisibility }) => {
             </div>
           </div>
           <div className="flex flex-wrap justify-center">
-            <p className="w-full text-left text-xl">Użyte narzędzia developerskie:</p>
+            <p className="w-full text-left text-xl">
+              Użyte narzędzia developerskie:
+            </p>
             <div className="w-[150px] p-1 bg-black/50  rounded-full m-1 flex items-center justify-center">
-              <img src={npm} alt="ikonka JavaScript" className="w-[40px] mx-2" />
+              <img
+                src={npm}
+                alt="ikonka JavaScript"
+                className="w-[40px] mx-2"
+              />
               npm
             </div>
             <div className="w-[150px] p-1 bg-black/50  rounded-full m-1 flex items-center justify-center">
-              <img src={node} alt="ikonka JavaScript" className="w-[25px] mx-2" />
+              <img
+                src={node}
+                alt="ikonka JavaScript"
+                className="w-[25px] mx-2"
+              />
               Node.js
             </div>
           </div>

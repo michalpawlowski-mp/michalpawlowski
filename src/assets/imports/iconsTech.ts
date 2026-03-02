@@ -2,8 +2,8 @@ import html from "../icons/tech/html.svg";
 import css from "../icons/tech/css.svg";
 import sass from "../icons/tech/sass.svg";
 import less from "../icons/tech/less.svg";
-import bs from "../icons/tech/bootstrap.svg";
-import tw from "../icons/tech/tailwind.svg";
+import bootstrap from "../icons/tech/bootstrap.svg";
+import tailwind from "../icons/tech/tailwind.svg";
 import js from "../icons/tech/js.svg";
 import jquery from "../icons/tech/jquery.svg";
 import ts from "../icons/tech/ts.svg";
@@ -23,8 +23,8 @@ export {
   less,
   ts,
   js,
-  bs,
-  tw,
+  bootstrap,
+  tailwind,
   jquery,
   styled,
   react,
