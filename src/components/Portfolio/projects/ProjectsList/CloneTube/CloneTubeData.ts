@@ -1,7 +1,7 @@
 import {
   react,
   next,
-  tw,
+  tailwind,
   npm,
   vercel,
   ts,
@@ -12,7 +12,7 @@ import {
 export const technologiesData = [
   { src: react, name: "React" },
   { src: ts, name: "Typescript" },
-  { src: tw, name: "Tailwind" },
+  { src: tailwind, name: "Tailwind" },
 ];
 
 export const devToolsData = [

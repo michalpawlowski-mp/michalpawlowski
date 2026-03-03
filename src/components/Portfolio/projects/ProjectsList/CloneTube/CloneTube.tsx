@@ -1,4 +1,4 @@
-import { clonetube, react, tw, next } from "../../../../../assets/imports/index";
+import { clonetube, react, tailwind, next } from "../../../../../assets/imports/index";
 import Links from "../../Link/Links";
 import { useToggle } from "../../../../../hooks/useToggle";
 import CloneTubePanel from "./CloneTubePanel";
@@ -13,7 +13,7 @@ const CloneTube: React.FC = () => {
       <img src={clonetube} alt="Podglad strony kólko i krzyżyk" />
       <div className="flex justify-center w-full items-center border-t-2 border-b-2 border-white">
         <img src={react} alt="ikonka react" className="w-[20px] m-2" />
-        <img src={tw} alt="ikonka tailwind" className="w-[20px] m-2" />
+        <img src={tailwind} alt="ikonka tailwind" className="w-[20px] m-2" />
         <img src={next} alt="ikonka next.js" className="w-[20px] m-2 invert" />
       </div>
       <Links
