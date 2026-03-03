@@ -18,7 +18,7 @@ Projekt prezentuje moje doświadczenie zawodowe, umiejętności techniczne oraz 
 ### 1️⃣ Klonowanie repozytorium
 ```bash
 git clone https://github.com/michalpawlowski-mp/michalpawlowski
-cd pawlowskimichal.pl
+cd michalpawlowski
 ```
 
 ### 2️⃣ Instalacja zależności
