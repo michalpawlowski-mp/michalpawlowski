@@ -1,10 +1,11 @@
-import * as img from "../../../assets/imports/index";
+import * as img from "../assets/imports";
 
-export interface ProjectDataProps {
+export interface ProjectsDataProps {
   id: string;
   title: string;
   features: string[];
   description: string[];
+  miniDescription?: string;
   images: string[];
   technologies: { name: string; src: string }[];
   devTools?: { name: string; src: string }[];
@@ -12,42 +13,10 @@ export interface ProjectDataProps {
     github: string;
     website: string;
   };
+  example?: boolean;
 }
 
-export const projectsData: ProjectDataProps[] = [
-  {
-    id: "calculator",
-    title: "Kalkulator",
-    features: [
-      "Podstawowe operacje (+, -, *, /)",
-      "Operacje specjalne (%, √, x²)",
-      "Przycisk cofania (`undo`)",
-      "Przycisk czyszczenia (`clear all`)",
-      "Obsługa liczb dziesiętnych i ujemnych",
-      "Zapisywanie stanu w localStorage",
-    ],
-    description: [
-      `Projekt przedstawia prosty **kalkulator** zbudowany w czystym JavaScript, HTML i SCSS.
-      Aplikacja pozwala na wykonywanie podstawowych i specjalnych operacji matematycznych.
-      Stan kalkulatora jest zapisywany w pamięci przeglądarki ("localStorage"),
-      dzięki czemu po odświeżeniu strony sesja zostaje przywrócona.`,
-      "Interfejs użytkownika jest responsywny i czytelny.",
-    ],
-    images: [img.cal],
-    technologies: [
-      { name: "HTML", src: img.html },
-      { name: "CSS", src: img.css },
-      { name: "JavaScript", src: img.js },
-    ],
-    devTools: [
-      { name: "npm", src: img.npm },
-      { name: "node.js", src: img.node },
-    ],
-    links: {
-      github: "https://github.com/michalpawlowski-mp/Calculator",
-      website: "https://michalpawlowski-mp.github.io/Calculator/",
-    },
-  },
+export const projectsData: ProjectsDataProps[] = [
   {
     id: "clonetube",
     title: "CloneTube",
@@ -71,6 +40,10 @@ export const projectsData: ProjectDataProps[] = [
       świetnie pokazuje wykorzystanie zewnętrznego API i obsługę dynamicznych
       komponentów w nowoczesnej aplikacji webowej.`,
     ],
+    miniDescription: `Moja aplikacja CloneTube wykorzystuje API YouTube do wyświetlania filmów wideo w
+          wybranej kategorii lub na podstawie wyszukiwanego hasła. Umożliwia użytkownikowi
+          przeglądanie listy filmów, otwieranie ich w odtwarzaczu oraz szybkie
+          przełączanie się między różnymi kategoriami tematycznymi`,
     images: [img.clonetube, img.clonetubeVW],
     technologies: [
       { name: "React", src: img.react },
@@ -88,81 +61,7 @@ export const projectsData: ProjectDataProps[] = [
       github: "https://github.com/michalpawlowski-mp/CloneTube",
       website: "https://clone-tube-ecru.vercel.app/",
     },
-  },
-  {
-    id: "GamingHub",
-    title: "GamingHub",
-    features: [
-      "Sortowanie i filtrowanie treści według kategorii (gry, aktualności, poradniki itp.)",
-      "Możliwość zapisania ulubionych elementów (np. linków do gier)",
-      "Rotacja trójkąta wskazująca aktywną opcję sortowania",
-      "Obsługa wyszukiwania treści",
-      "Dynamiczna nawigacja między różnymi sekcjami strony",
-      "Lista linków do stron oferujących gry, recenzje i promocje",
-      "Dostęp do informacji o nowościach i promocjach w sklepach gier",
-    ],
-    description: [
-      `Platforma umożliwia użytkownikom przeglądanie różnych kategorii treści,
-      takich jak gry, aktualności i poradniki. Każdy użytkownik może filtrować,
-      sortować i przeszukiwać te treści w prosty sposób. Użytkownicy mogą również
-      zapisywać ulubione linki do stron z grami lub sklepów, co ułatwia szybki
-      dostęp do interesujących ofert.`,
-      `  Dodatkowo, kod JavaScript umożliwia dynamiczną zmianę aktywnych opcji,
-      takich jak sortowanie czy zmiana statusu "ulubione". Strona wykorzystuje
-      również style CSS, aby była responsywna i dostosowana do wyświetlania na
-      różnych urządzeniach (mobilnych, desktopowych).`,
-      `Strona została zaprojektowana w sposób prosty i intuicyjny, dostarczając
-      użytkownikom przyjemne doświadczenie przeglądania. Dzięki dynamicznym
-      interakcjom, użytkownicy mogą szybko znaleźć interesujące ich treści i łatwo
-      przechodzić między kategoriami. Projekt ma na celu stworzenie centralnego
-      źródła informacji, które będzie pełnić rolę bazy zasobów i linków dla
-      każdego pasjonata gier.`,
-    ],
-    images: [img.gaminghub, img.gaminghubart, img.gaminghubshop],
-    technologies: [
-      { name: "HTML", src: img.html },
-      { name: "CSS", src: img.css },
-      { name: "JavaScript", src: img.js },
-    ],
-
-    links: {
-      github: "https://github.com/michalpawlowski-mp/GamingHub",
-      website: "https://michalpawlowski-mp.github.io/GamingHub/",
-    },
-  },
-  {
-    id: "Notatnik",
-    title: "Notatnik",
-    features: [
-      "Dodawanie nowych notatek”",
-      "Edycja istniejących notatek",
-      "Usuwanie notatek",
-      "Zapisywanie notatek w LocalStorage",
-      "Widok siatki notatek z kartami",
-      "Zmiana motywu jasny/ciemny",
-      "Responsywny design dla różnych ekranów",
-    ],
-    description: [
-      `Notatnik pozwala użytkownikom na tworzenie, edycję i usuwanie notatek. Każda
-      notatka zapisuje się w LocalStorage, więc pozostaje nawet po zamknięciu
-      przeglądarki.`,
-      `Użytkownik może przeglądać notatki w formie kart w siatce, które pokazują
-      tytuł, treść i datę utworzenia. Panel posiada również możliwość zmiany
-      motywu pomiędzy jasnym a ciemnym, co zapewnia komfort pracy.`,
-      `Projekt jest prosty i intuicyjny, z responsywnym designem, aby działał
-      dobrze zarówno na desktopie, jak i urządzeniach mobilnych. Celem projektu
-      jest szybkie i wygodne zarządzanie własnymi notatkami.`,
-    ],
-    images: [img.notebook, img.notebookWhite, img.notebookEdit, img.notebookNew],
-    technologies: [
-      { name: "HTML", src: img.html },
-      { name: "CSS", src: img.sass },
-      { name: "JavaScript", src: img.js },
-    ],
-    links: {
-      github: "https://github.com/michalpawlowski-mp/Notebook",
-      website: "https://michalpawlowski-mp.github.io/Notebook/",
-    },
+    example: true,
   },
   {
     id: "ShoesShop",
@@ -218,6 +117,161 @@ export const projectsData: ProjectDataProps[] = [
     links: {
       github: "https://github.com/michalpawlowski-mp/ShoesShop",
       website: "https://michalpawlowski-mp.github.io/ShoesShop/",
+    },
+  },
+
+  {
+    id: "GamingHub",
+    title: "GamingHub",
+    features: [
+      "Sortowanie i filtrowanie treści według kategorii (gry, aktualności, poradniki itp.)",
+      "Możliwość zapisania ulubionych elementów (np. linków do gier)",
+      "Rotacja trójkąta wskazująca aktywną opcję sortowania",
+      "Obsługa wyszukiwania treści",
+      "Dynamiczna nawigacja między różnymi sekcjami strony",
+      "Lista linków do stron oferujących gry, recenzje i promocje",
+      "Dostęp do informacji o nowościach i promocjach w sklepach gier",
+    ],
+    description: [
+      `Platforma umożliwia użytkownikom przeglądanie różnych kategorii treści,
+      takich jak gry, aktualności i poradniki. Każdy użytkownik może filtrować,
+      sortować i przeszukiwać te treści w prosty sposób. Użytkownicy mogą również
+      zapisywać ulubione linki do stron z grami lub sklepów, co ułatwia szybki
+      dostęp do interesujących ofert.`,
+      `  Dodatkowo, kod JavaScript umożliwia dynamiczną zmianę aktywnych opcji,
+      takich jak sortowanie czy zmiana statusu "ulubione". Strona wykorzystuje
+      również style CSS, aby była responsywna i dostosowana do wyświetlania na
+      różnych urządzeniach (mobilnych, desktopowych).`,
+      `Strona została zaprojektowana w sposób prosty i intuicyjny, dostarczając
+      użytkownikom przyjemne doświadczenie przeglądania. Dzięki dynamicznym
+      interakcjom, użytkownicy mogą szybko znaleźć interesujące ich treści i łatwo
+      przechodzić między kategoriami. Projekt ma na celu stworzenie centralnego
+      źródła informacji, które będzie pełnić rolę bazy zasobów i linków dla
+      każdego pasjonata gier.`,
+    ],
+    images: [img.gaminghub, img.gaminghubart, img.gaminghubshop],
+    technologies: [
+      { name: "HTML", src: img.html },
+      { name: "CSS", src: img.css },
+      { name: "JavaScript", src: img.js },
+    ],
+
+    links: {
+      github: "https://github.com/michalpawlowski-mp/GamingHub",
+      website: "https://michalpawlowski-mp.github.io/GamingHub/",
+    },
+  },
+  {
+    id: "WeatherApp",
+    title: "Aplikacja Pogodowa",
+    features: [
+      "Wyszukiwanie pogody na podstawie nazwy miasta",
+      "Pobieranie danych pogodowych z API OpenWeatherMap",
+      "Wyświetlanie temperatury, opisu pogody oraz wilgotności",
+      "Obsługa błędów i informowanie użytkownika o problemach",
+      "Możliwość restartu gry jednym przyciskiem",
+    ],
+    description: [
+      `Użytkownik wpisuje nazwę miasta w pole tekstowe i naciska przycisk "Pokaż
+      pogodę" lub klawisz Enter. Aplikacja wysyła zapytanie do API OpenWeatherMap,
+      pobiera aktualne dane pogodowe i wyświetla je na ekranie w przejrzystej
+      formie. Jeśli miasto nie istnieje lub wystąpił problem z połączeniem,
+      użytkownik otrzymuje odpowiedni komunikat.`,
+      `Strona posiada nowoczesny i przyjazny interfejs, a dzięki gradientowemu tłu i
+      animacjom zmiana danych odbywa się płynnie.`,
+    ],
+    miniDescription: `Moja aplikacja pogodowa wykorzystuje API OpenWeather do wyświetlania bieżącej
+          pogody w wybranym mieście. Umożliwia użytkownikowi sprawdzenie aktualnej
+          temperatury, wilgotności oraz ogólnych warunków pogodowych.`,
+    images: [img.wApp, img.wAppTemp],
+    technologies: [
+      { name: "HTML", src: img.html },
+      { name: "LESS", src: img.less },
+      { name: "JavaScript", src: img.js },
+    ],
+    devTools: [
+      { name: "node.js", src: img.node },
+      { name: "Vercel", src: img.vercel },
+      { name: "npm", src: img.npm },
+      { name: "Vite", src: img.vite },
+      { name: "API", src: img.API },
+    ],
+    links: {
+      github: "https://github.com/michalpawlowski-mp/WeatherApp",
+      website: "https://weather-app-red-delta-87.vercel.app/",
+    },
+    example: true,
+  },
+  {
+    id: "Notatnik",
+    title: "Notatnik",
+    features: [
+      "Dodawanie nowych notatek”",
+      "Edycja istniejących notatek",
+      "Usuwanie notatek",
+      "Zapisywanie notatek w LocalStorage",
+      "Widok siatki notatek z kartami",
+      "Zmiana motywu jasny/ciemny",
+      "Responsywny design dla różnych ekranów",
+    ],
+    description: [
+      `Notatnik pozwala użytkownikom na tworzenie, edycję i usuwanie notatek. Każda
+      notatka zapisuje się w LocalStorage, więc pozostaje nawet po zamknięciu
+      przeglądarki.`,
+      `Użytkownik może przeglądać notatki w formie kart w siatce, które pokazują
+      tytuł, treść i datę utworzenia. Panel posiada również możliwość zmiany
+      motywu pomiędzy jasnym a ciemnym, co zapewnia komfort pracy.`,
+      `Projekt jest prosty i intuicyjny, z responsywnym designem, aby działał
+      dobrze zarówno na desktopie, jak i urządzeniach mobilnych. Celem projektu
+      jest szybkie i wygodne zarządzanie własnymi notatkami.`,
+    ],
+    images: [
+      img.notebook,
+      img.notebookWhite,
+      img.notebookEdit,
+      img.notebookNew,
+    ],
+    technologies: [
+      { name: "HTML", src: img.html },
+      { name: "CSS", src: img.sass },
+      { name: "JavaScript", src: img.js },
+    ],
+    links: {
+      github: "https://github.com/michalpawlowski-mp/Notebook",
+      website: "https://michalpawlowski-mp.github.io/Notebook/",
+    },
+  },
+  {
+    id: "calculator",
+    title: "Kalkulator",
+    features: [
+      "Podstawowe operacje (+, -, *, /)",
+      "Operacje specjalne (%, √, x²)",
+      "Przycisk cofania (`undo`)",
+      "Przycisk czyszczenia (`clear all`)",
+      "Obsługa liczb dziesiętnych i ujemnych",
+      "Zapisywanie stanu w localStorage",
+    ],
+    description: [
+      `Projekt przedstawia prosty **kalkulator** zbudowany w czystym JavaScript, HTML i SCSS.
+      Aplikacja pozwala na wykonywanie podstawowych i specjalnych operacji matematycznych.
+      Stan kalkulatora jest zapisywany w pamięci przeglądarki ("localStorage"),
+      dzięki czemu po odświeżeniu strony sesja zostaje przywrócona.`,
+      "Interfejs użytkownika jest responsywny i czytelny.",
+    ],
+    images: [img.cal],
+    technologies: [
+      { name: "HTML", src: img.html },
+      { name: "CSS", src: img.css },
+      { name: "JavaScript", src: img.js },
+    ],
+    devTools: [
+      { name: "npm", src: img.npm },
+      { name: "node.js", src: img.node },
+    ],
+    links: {
+      github: "https://github.com/michalpawlowski-mp/Calculator",
+      website: "https://michalpawlowski-mp.github.io/Calculator/",
     },
   },
   {
@@ -282,43 +336,7 @@ export const projectsData: ProjectDataProps[] = [
       website: "https://michalpawlowski-mp.github.io/todo-list/",
     },
   },
-  {
-    id: "WeatherApp",
-    title: "Aplikacja Pogodowa",
-    features: [
-      "Wyszukiwanie pogody na podstawie nazwy miasta",
-      "Pobieranie danych pogodowych z API OpenWeatherMap",
-      "Wyświetlanie temperatury, opisu pogody oraz wilgotności",
-      "Obsługa błędów i informowanie użytkownika o problemach",
-      "Możliwość restartu gry jednym przyciskiem",
-    ],
-    description: [
-      `Użytkownik wpisuje nazwę miasta w pole tekstowe i naciska przycisk "Pokaż
-      pogodę" lub klawisz Enter. Aplikacja wysyła zapytanie do API OpenWeatherMap,
-      pobiera aktualne dane pogodowe i wyświetla je na ekranie w przejrzystej
-      formie. Jeśli miasto nie istnieje lub wystąpił problem z połączeniem,
-      użytkownik otrzymuje odpowiedni komunikat.`,
-      `Strona posiada nowoczesny i przyjazny interfejs, a dzięki gradientowemu tłu i
-      animacjom zmiana danych odbywa się płynnie.`,
-    ],
-    images: [img.wApp, img.wAppTemp],
-    technologies: [
-      { name: "HTML", src: img.html },
-      { name: "LESS", src: img.less },
-      { name: "JavaScript", src: img.js },
-    ],
-    devTools: [
-      { name: "node.js", src: img.node },
-      { name: "Vercel", src: img.vercel },
-      { name: "npm", src: img.npm },
-      { name: "Vite", src: img.vite },
-      { name: "API", src: img.API },
-    ],
-    links: {
-      github: "https://github.com/michalpawlowski-mp/WeatherApp",
-      website: "https://weather-app-red-delta-87.vercel.app/",
-    },
-  },
+
   {
     id: "kolko-i-krzyzyk",
     title: "Kółko i krzyżyk",
@@ -337,6 +355,9 @@ export const projectsData: ProjectDataProps[] = [
       `Projekt został zaprojektowany z myślą o prostocie i wygodzie użytkowania,
       oferując płynną animację oraz intuicyjne interakcje..`,
     ],
+    miniDescription: `Mój mini projekt to klasyczna gra logiczna dla dwóch graczy. Pozwala na
+          interaktywną rozgrywkę w przeglądarce, z automatycznym wykrywaniem zwycięzcy i
+          możliwością restartu gry.`,
     images: [img.xo, img.xor],
     technologies: [
       { name: "HTML", src: img.html },
@@ -351,5 +372,6 @@ export const projectsData: ProjectDataProps[] = [
       github: "https://github.com/michalpawlowski-mp/X-O",
       website: "https://michalpawlowski-mp.github.io/X-O/",
     },
+    example: true,
   },
 ];

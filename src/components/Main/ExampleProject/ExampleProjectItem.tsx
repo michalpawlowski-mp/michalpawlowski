@@ -1,26 +1,29 @@
 import { useToggle } from "../../../hooks/useToggle";
-import { ExampleProjectProps } from "./ExampleProject.data";
+import { ProjectsDataProps } from "../../../data/projects.data";
 import ToggleButton from "../../UI/ToggleButton/ToggleButton";
+import ProjectPanel from "../../Portfolio/projects/ProjectPanel";
 
-const ExampleProjectItem: React.FC<ExampleProjectProps> = ({
-  title,
-  description,
-  Panel,
-}) => {
+interface Props {
+  project: ProjectsDataProps;
+}
+
+const ExampleProjectItem: React.FC<Props> = ({ project }) => {
   const { isVisible, toggleVisibility } = useToggle();
 
   return (
     <>
       <div className="flex flex-col text-center justify-between items-center w-full md:w-1/3 bg-gray-700/50 p-4 md:mx-2 my-2 rounded-xl shadow-inner shadow-black">
-        <h4 className="text-2xl mb-3">{title}</h4>
-        <p className="text-sm text-left pb-1">{description}</p>
+        <h4 className="text-2xl mb-3">{project.title}</h4>
+        <p className="text-sm text-left pb-1">{project.miniDescription}</p>
         <ToggleButton
           content="Zobacz szczegóły"
           onClick={toggleVisibility}
           className="mt-3"
         />
       </div>
-      {isVisible && <Panel toggleVisibility={toggleVisibility} />}
+      {isVisible && (
+        <ProjectPanel project={project} toggleVisibility={toggleVisibility} />
+      )}
     </>
   );
 };
