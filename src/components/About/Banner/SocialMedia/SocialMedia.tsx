@@ -12,13 +12,7 @@ const SocialMedia: React.FC = () => {
             rel="noopener noreferrer"
             className="flex items-center p-1 mx-1 rounded-full border border-white hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white"
           >
-            <img
-              className="rounded-full"
-              src={icon}
-              alt=""
-              width={24}
-              loading="lazy"
-            />
+            <img className="rounded-full" src={icon} alt="" width={24} loading="lazy" />
           </a>
         </li>
       ))}

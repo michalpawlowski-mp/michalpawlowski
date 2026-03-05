@@ -2,7 +2,8 @@ import { CarrierDataProps } from "../../../../types/CarrierDataProps";
 
 export const supportData: CarrierDataProps[] = [
   {
-    date: "08/2022 – 09/2022 (2 mies.)",
+    startDate: "2022-08",
+    endDate: "2022-09",
     company: "Szpital Uniwersytecki nr 2 im. Jana Biziela w Bydgoszczy",
     position: "Dział Samodzielnej Sekcji Łączności (STAŻ)",
     description: [
@@ -11,7 +12,8 @@ export const supportData: CarrierDataProps[] = [
     ],
   },
   {
-    date: "12/2021 – 08/2022 (9 mies.)",
+    startDate: "2021-12",
+    endDate: "2022-08",
     company: "Instytut Informatyki Uniwersytetu Kazimierza Wielkiego w Bydgoszczy",
     position: "Dział Techniczny",
     description: [
@@ -20,13 +22,14 @@ export const supportData: CarrierDataProps[] = [
     ],
   },
   {
-    date: "07/2021 – 09/2021 (3 mies.)",
+    startDate: "2021-07",
+    endDate: "2021-09",
     company: "BELMA ACCESSORIES SYSTEMS - Bydgoszcz",
     position: "Referent ds. Informatycznych",
     description: [
-      `Wsparcie techniczne w zarządzaniu systemami informatycznymi.`,
-      `Rozwiązywanie problemów technicznych związanych z siecią i sprzętem.`,
-      `Przygotowywanie dokumentacji technicznej.`,
+      "Wsparcie techniczne w zarządzaniu systemami informatycznymi.",
+      "Rozwiązywanie problemów technicznych związanych z siecią i sprzętem.",
+      "Przygotowywanie dokumentacji technicznej.",
     ],
   },
 ];

@@ -6,9 +6,9 @@ const ExampleProjects: React.FC = () => {
   const exampleProjects = projectsData.filter((p) => p.example);
 
   return (
-    <section className="flex flex-wrap justify-center">
+    <section className="flex flex-wrap justify-center mb-2">
       <h3 className="text-4xl mb-2">Wybrane projekty</h3>
-      <div className="flex flex-col md:flex-row w-full px-2">
+      <div className="flex flex-col md:flex-row w-full px-2 mb-2">
         {exampleProjects.map((project) => (
           <ExampleProjectItem key={project.id} project={project} />
         ))}
