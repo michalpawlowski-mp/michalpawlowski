@@ -9,7 +9,7 @@ const SkillGroup: React.FC<SkillCategory> = ({ title, items, info }) => (
       {items.map((skill) => (
         <li
           key={skill}
-          className="w-max text-center p-2 bg-white/10 rounded-2xl shadow-sm shadow-gray-600 hover:bg-white/20"
+          className="w-max text-center p-2 bg-white/10 hover:bg-white/20 rounded-2xl shadow-sm shadow-gray-600 "
         >
           {skill}
         </li>

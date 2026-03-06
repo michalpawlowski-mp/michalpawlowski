@@ -1,7 +1,8 @@
 import { projectsData } from "../../../data/projects.data";
 import ProjectCard from "./ProjectCard";
-import MoreProjects from "./MoreProject/MoreProject"; // ← dodaj import
+import MoreProjects from "./MoreProject/MoreProject";
 import { useState } from "react";
+import ToggleButton from "../../UI/ToggleButton/ToggleButton";
 
 const ProjectsList: React.FC = () => {
   const [visibleCount, setVisibleCount] = useState(4);
@@ -17,13 +18,11 @@ const ProjectsList: React.FC = () => {
       </div>
 
       {hasMoreProjects && (
-        <button
-          type="button"
+        <ToggleButton
+          content="Zobacz więcej"
           onClick={() => setVisibleCount((p) => p + 4)}
-          className="mt-8 px-8 py-3 bg-white/10 hover:bg-white/20 rounded-xl transition-colors"
-        >
-          Zobacz więcej
-        </button>
+          className="mt-3 bg-white/10 hover:bg-white/20"
+        />
       )}
 
       {!hasMoreProjects && <MoreProjects />}

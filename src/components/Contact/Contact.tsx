@@ -20,7 +20,6 @@ const Contact: React.FC = () => {
   return (
     <section className="w-full p-2 flex flex-col items-center">
       <h2 className="text-4xl font-bold mb-4 text-white">Opcje kontaktu</h2>
-
       <div className="w-full flex md:flex-row flex-col items-center justify-center m-2">
         {contactData.map((item) => (
           <div

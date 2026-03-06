@@ -11,23 +11,17 @@ const Education: React.FC = () => {
   };
 
   return (
-    <article className="flex flex-col items-center bg-black/50 md:mx-2 mt-2 p-3 rounded-3xl w-full md:w-1/2  shadow-sm shadow-gray-600">
+    <article className="flex flex-col items-center bg-black/50 md:mx-2 mt-2 p-3 rounded-3xl w-full md:w-1/2 shadow-sm shadow-gray-600">
       <h2 className="text-3xl mb-2">Wykształcenie</h2>
       <ToggleButton
         content="Zobacz moje wykształcenie"
         onClick={toggleVisibility}
-        className="rounded-full bg-white/10 shadow-sm shadow-gray-600"
+        className="rounded-full bg-white/10 hover:bg-white/20 shadow-sm shadow-gray-600"
       />
       {isVisible && (
-        <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-40 backdrop-blur-sm p-2">
-          <div className="bg-white/10 p-2 rounded-2xl max-w-3xl w-full h-5/6 overflow-auto scrollbar-none">
-            <button
-              type="button"
-              onClick={toggleVisibility}
-              className="mb-4 p-2 bg-white/10 text-white rounded-xl"
-            >
-              Zamknij
-            </button>
+        <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-40 backdrop-blur-sm p-2 ">
+          <div className="bg-white/10 p-2 rounded-2xl max-w-3xl w-full overflow-auto scrollbar-none h-max ">
+            <ToggleButton content="Zamknij" onClick={toggleVisibility} />
             {educationData.map((item, index) => (
               <EducationItem key={index} {...item} />
             ))}

@@ -1,5 +1,5 @@
 export interface ContactProps {
-  id: number;
+  id: string;
   text: string;
   href: string;
   alt: string;
@@ -7,13 +7,13 @@ export interface ContactProps {
 
 export const contactData: ContactProps[] = [
   {
-    id: 1,
+    id: "mail",
     text: "kontakt@michalpawlowski.pl",
     href: "mailto:kontakt@michalpawlowski.pl",
     alt: "skopiuj email",
   },
   {
-    id: 2,
+    id: "phone",
     text: "728 117 024",
     href: "mailto:kontakt@michalpawlowski.pl",
     alt: "skopiuj numer telefonu",

@@ -6,7 +6,7 @@ type ToggleButtonProps = {
 
 const ToggleButton = ({ onClick, content, className }: ToggleButtonProps) => {
   const classes =
-    "py-2 px-5 bg-black/50 text-white rounded-xl cursor-pointer active:scale-95";
+    "py-2 px-5 bg-black/30 hover:bg-black/50 text-white rounded-xl cursor-pointer active:scale-95";
 
   return (
     <button type="button" onClick={onClick} className={`${classes} ${className}`}>

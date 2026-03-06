@@ -16,7 +16,7 @@ const Carrier: React.FC = () => {
       <ToggleButton
         content="Zobacz moją kariere"
         onClick={toggleVisibility}
-        className="rounded-full bg-white/10 shadow-sm shadow-gray-600"
+        className="rounded-full bg-white/10 hover:bg-white/20 shadow-sm shadow-gray-600"
       />
       {isVisible && (
         <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-40 backdrop-blur-sm p-2">
