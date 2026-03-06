@@ -37,6 +37,7 @@ const Contact: React.FC = () => {
               onClick={() => copyToClipboard(item.text)}
               src={copy}
               alt={item.alt}
+              loading="lazy"
               className="py-4 pr-4 pl-2 hover:bg-white/30 transition duration-300 ease-in-out cursor-pointer"
             />
           </div>

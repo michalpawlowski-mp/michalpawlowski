@@ -8,9 +8,14 @@ const Technologies: React.FC<TechnologiesProps> = ({ technologies, devTools }) =
         {technologies.map((tech) => (
           <div
             key={tech.name}
-            className="w-[125px] bg-black/50 py-1 rounded-full m-1 flex items-center justify-center"
+            className="w-31.25 bg-black/50 py-1 rounded-full m-1 flex items-center justify-center"
           >
-            <img src={tech.src} alt={`ikonka ${tech.name}`} className="mx-2" />
+            <img
+              src={tech.src}
+              alt={`ikonka ${tech.name}`}
+              className="mx-2"
+              loading="lazy"
+            />
             {tech.name}
           </div>
         ))}
@@ -20,9 +25,14 @@ const Technologies: React.FC<TechnologiesProps> = ({ technologies, devTools }) =
         {devTools.map((tool) => (
           <div
             key={tool.name}
-            className="w-[125px] py-1 bg-black/50 rounded-full m-1 flex items-center justify-center"
+            className="w-31.25 py-1 bg-black/50 rounded-full m-1 flex items-center justify-center"
           >
-            <img src={tool.src} alt={`ikonka ${tool.name}`} className="mx-2" />
+            <img
+              src={tool.src}
+              alt={`ikonka ${tool.name}`}
+              className="mx-2"
+              loading="lazy"
+            />
             {tool.name}
           </div>
         ))}

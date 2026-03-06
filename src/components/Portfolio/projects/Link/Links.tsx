@@ -6,11 +6,7 @@ interface LinksProps {
   onInfoClick?: () => void;
 }
 
-const Links: React.FC<LinksProps> = ({
-  githubLink,
-  websiteLink,
-  onInfoClick,
-}) => {
+const Links: React.FC<LinksProps> = ({ githubLink, websiteLink, onInfoClick }) => {
   return (
     <div className="flex justify-center w-full">
       <a
@@ -19,7 +15,7 @@ const Links: React.FC<LinksProps> = ({
         rel="noopener noreferrer"
         className="hover:bg-white/20 w-1/3 border-r-2 flex items-center p-2 justify-center"
       >
-        <img src={github} alt="Link do repozytorium na githubie" />
+        <img src={github} alt="Link do repozytorium na githubie" loading="lazy" />
       </a>
       <a
         href={websiteLink}
@@ -27,13 +23,13 @@ const Links: React.FC<LinksProps> = ({
         rel="noopener noreferrer"
         className="hover:bg-white/20 w-1/3 flex items-center justify-center p-2"
       >
-        <img src={web} alt="link do strony projektu (live demo)" />
+        <img src={web} alt="link do strony projektu (live demo)" loading="lazy" />
       </a>
       <div
         onClick={onInfoClick}
         className="hover:bg-white/20 w-1/3 border-l-2 p-2 flex items-center justify-center cursor-pointer"
       >
-        <img src={info} alt="Info" />
+        <img src={info} alt="Więcejn info o projekcie" loading="lazy" />
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import { CarrierDataProps } from "../../../../types/CarrierDataProps";
 
 export const developerData: CarrierDataProps[] = [
   {
-    startDate: "2024-05",
+    startDate: "2023-06",
     endDate: null,
     company: "Projekty własne",
     position: "Frontend Development – Personal Projects",

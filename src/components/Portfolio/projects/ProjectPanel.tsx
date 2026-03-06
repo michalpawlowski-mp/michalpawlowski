@@ -10,8 +10,8 @@ interface Props {
 
 const ProjectPanel: React.FC<Props> = ({ project, toggleVisibility }) => {
   return (
-    <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-40 backdrop-blur-sm">
-      <div className="bg-white/10 p-3 rounded-2xl max-w-3xl w-full h-5/6 overflow-auto scrollbar-none">
+    <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-40 backdrop-blur-sm p-2">
+      <div className="bg-white/10 p-2 rounded-2xl max-w-3xl w-full h-5/6 overflow-auto scrollbar-none">
         <div className="flex items-center">
           <ToggleButton content="Zamknij" onClick={toggleVisibility} />
           <h4 className="text-2xl m-auto">{project.title}</h4>
@@ -26,7 +26,7 @@ const ProjectPanel: React.FC<Props> = ({ project, toggleVisibility }) => {
           ))}
         </div>
 
-        <div className="flex flex-col text-left">
+        <div className="flex flex-col text-left mb-2">
           <p className="text-xl">Opis</p>
           {project.description.map((desc, index) => (
             <p key={index} className="text-sm mt-2">
@@ -42,6 +42,7 @@ const ProjectPanel: React.FC<Props> = ({ project, toggleVisibility }) => {
               src={img}
               className="rounded-xl"
               alt={`Project numer ${index + 1}`}
+              loading="lazy"
             />
           ))}
         </div>

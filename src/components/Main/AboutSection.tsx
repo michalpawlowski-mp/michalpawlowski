@@ -4,9 +4,9 @@ import Button from "./ButtonLink";
 const AboutSection = () => {
   return (
     <section className="flex items-center justify-center w-full p-2">
-      <div className="relative w-[125px] aspect-square shrink-0">
+      <div className="relative w-31.25 aspect-square shrink-0">
         <div className="absolute inset-0 rounded-full overflow-hidden shadow-lg shadow-gray-400">
-          <div className="absolute inset-0 animate-[spin_4s_linear_infinite] bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700"></div>
+          <div className="absolute inset-0 animate-[spin_4s_linear_infinite] bg-linear-to-r from-slate-900 via-slate-800 to-slate-700"></div>
           <img
             src={me}
             alt="Animowane zdjęcie Michała Pawłowskiego"

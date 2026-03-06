@@ -5,7 +5,7 @@ const Description: React.FC = () => {
   const descriptionData = getDescriptionData();
 
   return (
-    <article className="w-full md:w-1/2 p-2 bg-black/50 rounded-3xl md:mx-2 my-2 shadow-sm shadow-gray-600">
+    <article className="w-full md:w-1/3 p-2 bg-black/50 rounded-3xl md:mx-2 my-2 shadow-sm shadow-gray-600">
       <h3 className="text-3xl text-center">O mnie</h3>
       <div className="p-3 space-y-4">
         {descriptionData.map((item, index) => (

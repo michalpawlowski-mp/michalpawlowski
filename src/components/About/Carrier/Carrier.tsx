@@ -19,8 +19,8 @@ const Carrier: React.FC = () => {
         className="rounded-full bg-white/10 shadow-sm shadow-gray-600"
       />
       {isVisible && (
-        <div className="fixed inset-0 bg-black/30 z-20 p-10 flex justify-center items-center backdrop-blur-sm">
-          <div className="bg-white/10 scrollbar-none  shadow-inner shadow-black p-2 rounded-2xl m-1 max-w-3xl w-max h-full  overflow-auto ">
+        <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-40 backdrop-blur-sm p-2">
+          <div className="bg-white/10 p-2 rounded-2xl max-w-3xl w-full h-5/6 overflow-auto scrollbar-none">
             <ToggleButton content="Zamknij" onClick={toggleVisibility} />
             <div className="flex flex-col p-2 ">
               <Developer />
