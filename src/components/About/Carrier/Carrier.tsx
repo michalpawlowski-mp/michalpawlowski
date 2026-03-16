@@ -11,7 +11,7 @@ const Carrier: React.FC = () => {
   };
 
   return (
-    <article className="flex flex-col items-center bg-black/50 md:mx-2 mt-2 p-3 rounded-3xl w-full md:w-1/2  shadow-sm shadow-gray-600">
+    <article className="flex flex-col items-center bg-black/50 md:mx-2 md:mt-2 p-3 rounded-3xl w-full md:w-1/2  shadow-sm shadow-gray-600">
       <h2 className="text-3xl mb-2">Kariera</h2>
       <ToggleButton
         content="Zobacz moją kariere"

@@ -10,7 +10,7 @@ const AboutSection = () => {
           <img
             src={me}
             alt="Animowane zdjęcie Michała Pawłowskiego"
-            className="relative w-full h-full object-cover object-top rounded-full"
+            className="relative rounded-3xl shadow-lg m-3 transition-transform duration-500 hover:scale-105"
           />
         </div>
       </div>

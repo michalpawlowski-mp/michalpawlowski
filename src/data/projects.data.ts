@@ -225,12 +225,7 @@ export const projectsData: ProjectsDataProps[] = [
       dobrze zarówno na desktopie, jak i urządzeniach mobilnych. Celem projektu
       jest szybkie i wygodne zarządzanie własnymi notatkami.`,
     ],
-    images: [
-      img.notebook,
-      img.notebookWhite,
-      img.notebookEdit,
-      img.notebookNew,
-    ],
+    images: [img.notebook, img.notebookWhite, img.notebookEdit, img.notebookNew],
     technologies: [
       { name: "HTML", src: img.html },
       { name: "CSS", src: img.sass },
