@@ -41,9 +41,8 @@ export const projectsData: ProjectsDataProps[] = [
       komponentów w nowoczesnej aplikacji webowej.`,
     ],
     miniDescription: `Moja aplikacja CloneTube wykorzystuje API YouTube do wyświetlania filmów wideo w
-          wybranej kategorii lub na podstawie wyszukiwanego hasła. Umożliwia użytkownikowi
-          przeglądanie listy filmów, otwieranie ich w odtwarzaczu oraz szybkie
-          przełączanie się między różnymi kategoriami tematycznymi`,
+    wybranej kategorii lub na podstawie wyszukiwanego hasła. Umożliwia użytkownikowi
+    przeglądanie listy filmów, otwieranie ich w odtwarzaczu oraz szybkie przełączanie się między różnymi kategoriami tematycznymi`,
     images: [img.clonetube, img.clonetubeVW],
     technologies: [
       { name: "React", src: img.react },
@@ -80,22 +79,22 @@ export const projectsData: ProjectsDataProps[] = [
       "Responsywny interfejs dopasowany do desktopu i urządzeń mobilnych",
     ],
     description: [
-      `                         ShoesShop to aplikacja webowa typu e-commerce umożliwiająca przeglądanie i
-              zakup obuwia sportowego marek Nike, Adidas oraz New Balance.
-              przeglądarki.`,
-      `                           Na stronie głównej użytkownik ma dostęp do listy produktów z rozbudowanym
-              systemem filtrowania według marki, płci, ceny oraz nazwy. Aktywne filtry są
-              sygnalizowane, a ich reset możliwy jest jednym kliknięciem. W przypadku
-              braku produktów spełniających kryteria wyświetlany jest odpowiedni
-              komunikat.`,
-      `                            Aplikacja posiada koszyk zakupowy z możliwością dodawania i usuwania
-              produktów, automatycznym sumowaniem ceny oraz obsługą pustego stanu koszyka.
-              Zawartość koszyka zapisywana jest w LocalStorage, dzięki czemu pozostaje
-              zachowana po odświeżeniu strony.`,
-      `                       Każdy produkt posiada dedykowaną stronę szczegółów z galerią zdjęć oraz
-              możliwością wyboru rozmiaru. Dodanie produktu do koszyka jest możliwe
-              dopiero po wybraniu rozmiaru, co zapobiega błędom użytkownika. Projekt
-              został wykonany z naciskiem na czytelny UX i responsywność interfejsu.`,
+      `ShoesShop to aplikacja webowa typu e-commerce umożliwiająca przeglądanie i
+      zakup obuwia sportowego marek Nike, Adidas oraz New Balance.
+      przeglądarki.`,
+      `Na stronie głównej użytkownik ma dostęp do listy produktów z rozbudowanym
+      systemem filtrowania według marki, płci, ceny oraz nazwy. Aktywne filtry są
+      sygnalizowane, a ich reset możliwy jest jednym kliknięciem. W przypadku
+      braku produktów spełniających kryteria wyświetlany jest odpowiedni
+      komunikat.`,
+      `Aplikacja posiada koszyk zakupowy z możliwością dodawania i usuwania
+      produktów, automatycznym sumowaniem ceny oraz obsługą pustego stanu koszyka.
+      Zawartość koszyka zapisywana jest w LocalStorage, dzięki czemu pozostaje
+      zachowana po odświeżeniu strony.`,
+      `Każdy produkt posiada dedykowaną stronę szczegółów z galerią zdjęć oraz
+      możliwością wyboru rozmiaru. Dodanie produktu do koszyka jest możliwe
+      dopiero po wybraniu rozmiaru, co zapobiega błędom użytkownika. Projekt
+      został wykonany z naciskiem na czytelny UX i responsywność interfejsu.`,
     ],
     images: [
       img.shoesShop,
@@ -155,7 +154,6 @@ export const projectsData: ProjectsDataProps[] = [
       { name: "CSS", src: img.css },
       { name: "JavaScript", src: img.js },
     ],
-
     links: {
       github: "https://github.com/michalpawlowski-mp/GamingHub",
       website: "https://michalpawlowski-mp.github.io/GamingHub/",
@@ -181,8 +179,8 @@ export const projectsData: ProjectsDataProps[] = [
       animacjom zmiana danych odbywa się płynnie.`,
     ],
     miniDescription: `Moja aplikacja pogodowa wykorzystuje API OpenWeather do wyświetlania bieżącej
-          pogody w wybranym mieście. Umożliwia użytkownikowi sprawdzenie aktualnej
-          temperatury, wilgotności oraz ogólnych warunków pogodowych.`,
+    pogody w wybranym mieście. Umożliwia użytkownikowi sprawdzenie aktualnej
+    temperatury, wilgotności oraz ogólnych warunków pogodowych.`,
     images: [img.wApp, img.wAppTemp],
     technologies: [
       { name: "HTML", src: img.html },
@@ -304,7 +302,7 @@ export const projectsData: ProjectsDataProps[] = [
   },
   {
     id: "ToDoList",
-    title: "ToDoList",
+    title: "To-Do List",
     features: [
       "Dodawanie nowych zadań",
       "Edytowanie istniejących zadań",
@@ -331,7 +329,6 @@ export const projectsData: ProjectsDataProps[] = [
       website: "https://michalpawlowski-mp.github.io/todo-list/",
     },
   },
-
   {
     id: "kolko-i-krzyzyk",
     title: "Kółko i krzyżyk",
@@ -344,15 +341,15 @@ export const projectsData: ProjectsDataProps[] = [
     ],
     description: [
       `Gra rozpoczyna się od planszy 3x3, na której gracze na zmianę umieszczają
-      swoje symbole (X lub O). Po każdym ruchu aplikacja sprawdza, czy któryś z
-      graczy wygrał lub czy nastąpił remis. Po zakończeniu gry można uruchomić nową
-      rozgrywkę za pomocą przycisku „Restart”.`,
+    swoje symbole (X lub O). Po każdym ruchu aplikacja sprawdza, czy któryś z
+    graczy wygrał lub czy nastąpił remis. Po zakończeniu gry można uruchomić nową
+    rozgrywkę za pomocą przycisku „Restart”.`,
       `Projekt został zaprojektowany z myślą o prostocie i wygodzie użytkowania,
-      oferując płynną animację oraz intuicyjne interakcje..`,
+    oferując płynną animację oraz intuicyjne interakcje..`,
     ],
     miniDescription: `Mój mini projekt to klasyczna gra logiczna dla dwóch graczy. Pozwala na
-          interaktywną rozgrywkę w przeglądarce, z automatycznym wykrywaniem zwycięzcy i
-          możliwością restartu gry.`,
+    interaktywną rozgrywkę w przeglądarce, z automatycznym wykrywaniem zwycięzcy i
+    możliwością restartu gry.`,
     images: [img.xo, img.xor],
     technologies: [
       { name: "HTML", src: img.html },

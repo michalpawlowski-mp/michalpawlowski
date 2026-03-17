@@ -14,7 +14,7 @@ const Header: React.FC = () => {
       <button
         type="button"
         ref={buttonRef}
-        className="text-white z-30 text-4xl sm:hidden absolute right-2 top-2"
+        className="text-white z-30 text-4xl md:hidden absolute right-2 top-2 cursor-pointer"
         onClick={toggleNav}
       >
         {isNavOpen ? "\u00D7" : "\u2630"}
