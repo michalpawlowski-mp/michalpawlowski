@@ -1,20 +1,5 @@
 import * as img from "../assets/imports";
-
-export interface ProjectsDataProps {
-  id: string;
-  title: string;
-  features: string[];
-  description: string[];
-  miniDescription?: string;
-  images: string[];
-  technologies: { name: string; src: string }[];
-  devTools?: { name: string; src: string }[];
-  links: {
-    github: string;
-    website: string;
-  };
-  example?: boolean;
-}
+import { ProjectsDataProps } from "../types/ProjectsProps";
 
 export const projectsData: ProjectsDataProps[] = [
   {
@@ -118,7 +103,6 @@ export const projectsData: ProjectsDataProps[] = [
       website: "https://michalpawlowski-mp.github.io/ShoesShop/",
     },
   },
-
   {
     id: "GamingHub",
     title: "GamingHub",
@@ -318,7 +302,7 @@ export const projectsData: ProjectsDataProps[] = [
       (localStorage), dzięki czemu zadania nie znikają po odświeżeniu strony.
       Projekt jest prosty, responsywny i działa bez zewnętrznych bibliotek.`,
     ],
-    images: [img.todo],
+    images: [img.todo, img.todoedit],
     technologies: [
       { name: "HTML", src: img.html },
       { name: "CSS", src: img.css },

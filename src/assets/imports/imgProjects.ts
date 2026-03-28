@@ -9,7 +9,8 @@ import gaminghub from "../images/projects/GamingHub/gaminghub.svg";
 import gaminghubshop from "../images/projects/GamingHub/gaminghubshop.svg";
 import gaminghubart from "../images/projects/GamingHub/gaminghubart.svg";
 import slider from "../images/projects/slider.svg";
-import todo from "../images/projects/todolist.svg";
+import todo from "../images/projects/ToDoList/ToDoList.svg";
+import todoedit from "../images/projects/ToDoList/ToDoListEdit.svg";
 import notebook from "../images/projects/Notebook/notebook.svg";
 import notebookWhite from "../images/projects/Notebook/notebookWhite.svg";
 import notebookNew from "../images/projects/Notebook/notebookNewNote.svg";
@@ -33,6 +34,7 @@ export {
   gaminghubart,
   slider,
   todo,
+  todoedit,
   notebook,
   notebookEdit,
   notebookWhite,
