@@ -15,7 +15,7 @@ export const contactData: ContactProps[] = [
   {
     id: "phone",
     text: "728 117 024",
-    href: "mailto:kontakt@michalpawlowski.pl",
+    href: "tel:+48728117024",
     alt: "skopiuj numer telefonu",
   },
 ];

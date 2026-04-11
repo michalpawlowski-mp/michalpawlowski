@@ -4,7 +4,7 @@ import MoreProjects from "./MoreProject/MoreProject";
 import { useState } from "react";
 import ToggleButton from "../../UI/ToggleButton/ToggleButton";
 
-const ProjectsList: React.FC = () => {
+const Projects: React.FC = () => {
   const [visibleCount, setVisibleCount] = useState(4);
 
   const hasMoreProjects = visibleCount < projectsData.length;
@@ -30,4 +30,4 @@ const ProjectsList: React.FC = () => {
   );
 };
 
-export default ProjectsList;
+export default Projects;

@@ -280,8 +280,8 @@ export const projectsData: ProjectsDataProps[] = [
       { name: "npm", src: img.npm },
     ],
     links: {
-      github: "https://github.com/michalpawlowski-mp/ShoesShop",
-      website: "https://michalpawlowski-mp.github.io/ShoesShop/",
+      github: "https://github.com/michalpawlowski-mp/Slider",
+      website: "https://michalpawlowski-mp.github.io/Slider/",
     },
   },
   {

@@ -1,4 +1,4 @@
-import { ProjectsDataProps } from "../../../data/projects.data";
+import { ProjectsDataProps } from "../../../types/ProjectsProps";
 import Technologies from "./Technologies/Technologies";
 import LinksPanel from "./Link/LinksPanel";
 import ToggleButton from "../../UI/ToggleButton/ToggleButton";

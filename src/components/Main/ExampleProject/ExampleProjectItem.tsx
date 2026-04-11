@@ -1,5 +1,5 @@
 import { useToggle } from "../../../hooks/useToggle";
-import { ProjectsDataProps } from "../../../data/projects.data";
+import { ProjectsDataProps } from "../../../types/ProjectsProps";
 import ToggleButton from "../../UI/ToggleButton/ToggleButton";
 import ProjectPanel from "../../Portfolio/projects/ProjectPanel";
 
