@@ -1,13 +1,13 @@
 import { formatDate } from "../../../Utils/formatDate";
-import { CarrierDataProps } from "../../../types/CarrierDataProps";
+import { CareerDataProps } from "../../../types/CareerDataProps";
 
-const CarrierItem = ({
+const CareerItem = ({
   startDate,
   endDate,
   company,
   position,
   description,
-}: CarrierDataProps) => {
+}: CareerDataProps) => {
   return (
     <div className="p-4 mb-4 bg-black/20 rounded-3xl shadow shadow-white">
       <p className="text-xs">{formatDate(startDate, endDate)}</p>
@@ -24,4 +24,4 @@ const CarrierItem = ({
   );
 };
 
-export default CarrierItem;
+export default CareerItem;

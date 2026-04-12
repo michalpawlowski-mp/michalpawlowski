@@ -1,7 +1,7 @@
 import Banner from "./Banner/Banner";
 import Skills from "./Skills/Skills";
 import Description from "./Description/Description";
-import Carrier from "./Carrier/Carrier";
+import Career from "./Career/Career";
 import Education from "./Education/Education";
 
 const About: React.FC = () => {
@@ -13,7 +13,7 @@ const About: React.FC = () => {
         <Description />
       </div>
       <div className="flex flex-col w-full justify-center md:flex-row">
-        <Carrier />
+        <Career />
         <Education />
       </div>
     </section>

@@ -1,6 +1,6 @@
-import { CarrierDataProps } from "../../../../types/CarrierDataProps";
+import { CareerDataProps } from "../../../../types/CareerDataProps";
 
-export const supportData: CarrierDataProps[] = [
+export const supportData: CareerDataProps[] = [
   {
     startDate: "2022-08",
     endDate: "2022-09",
@@ -14,7 +14,8 @@ export const supportData: CarrierDataProps[] = [
   {
     startDate: "2021-12",
     endDate: "2022-08",
-    company: "Instytut Informatyki Uniwersytetu Kazimierza Wielkiego w Bydgoszczy",
+    company:
+      "Instytut Informatyki Uniwersytetu Kazimierza Wielkiego w Bydgoszczy",
     position: "Dział Techniczny",
     description: [
       "Wsparcie techniczne systemów i sprzętu komputerowego",

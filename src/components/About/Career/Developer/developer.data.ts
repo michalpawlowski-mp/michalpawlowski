@@ -1,6 +1,6 @@
-import { CarrierDataProps } from "../../../../types/CarrierDataProps";
+import { CareerDataProps } from "../../../../types/CareerDataProps";
 
-export const developerData: CarrierDataProps[] = [
+export const developerData: CareerDataProps[] = [
   {
     startDate: "2023-06",
     endDate: null,
