@@ -151,7 +151,9 @@ export const projectsData: ProjectsDataProps[] = [
       "Pobieranie danych pogodowych z API OpenWeatherMap",
       "Wyświetlanie temperatury, opisu pogody oraz wilgotności",
       "Obsługa błędów i informowanie użytkownika o problemach",
-      "Możliwość restartu gry jednym przyciskiem",
+      "Dynamiczna aktualizacja danych bez przeładowania strony",
+      "Obsługa klawisza Enter do wyszukiwania",
+      "Responsywny design",
     ],
     description: [
       `Użytkownik wpisuje nazwę miasta w pole tekstowe i naciska przycisk "Pokaż
@@ -168,15 +170,16 @@ export const projectsData: ProjectsDataProps[] = [
     images: [img.wApp, img.wAppTemp],
     technologies: [
       { name: "HTML", src: img.html },
-      { name: "LESS", src: img.less },
+      { name: "Bootstrap", src: img.bootstrap },
+      { name: "sass", src: img.sass },
       { name: "JavaScript", src: img.js },
+      { name: "API", src: img.API },
     ],
     devTools: [
       { name: "node.js", src: img.node },
       { name: "Vercel", src: img.vercel },
       { name: "npm", src: img.npm },
-      { name: "Vite", src: img.vite },
-      { name: "API", src: img.API },
+      { name: "next.js", src: img.next },
     ],
     links: {
       github: "https://github.com/michalpawlowski-mp/WeatherApp",
