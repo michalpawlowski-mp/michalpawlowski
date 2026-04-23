@@ -38,10 +38,7 @@ export function useTypewriter(phrases: string[]) {
         }
       }
 
-      timeout = setTimeout(
-        tick,
-        isDeleting.current ? DELETING_SPEED : TYPING_SPEED,
-      );
+      timeout = setTimeout(tick, isDeleting.current ? DELETING_SPEED : TYPING_SPEED);
     }
 
     timeout = setTimeout(tick, PAUSE_AFTER_DELETE);
