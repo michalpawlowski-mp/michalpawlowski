@@ -22,20 +22,20 @@
     <title>Michał Pawłowski | MP.Dev</title>
   </head>
   <body
-    class="text-white w-screen h-screen bg-[url('/background/bg.svg')] bg-cover bg-center bg-fixed bg-slate-800 scrollbar-none"
+    class="text-white w-screen min-h-screen scrollbar-none bg-[radial-gradient(ellipse_at_top_left,_#1e1b4b_0%,_#080b12_50%,_#0f0a1e_100%)]"
   >
     <noscript>
       <div
-        class="fixed inset-0 z-50 flex items-center justify-center bg-slate-900 text-white p-8 text-center"
+        class="fixed inset-0 z-50 flex items-center justify-center bg-[#0f1117] text-white p-8 text-center"
       >
         <h1 class="text-2xl mb-4">JavaScript jest wyłączony</h1>
         <p>
-          Ta strona wymaga włączonego JavaScriptu, aby działać poprawnie.<br />
-          Proszę włączyć JavaScript w ustawieniach przeglądarki.
+          Ta strona wymaga włączonego JavaScriptu, aby działać poprawnie.<br />Proszę
+          włączyć JavaScript w ustawieniach przeglądarki.
         </p>
       </div>
     </noscript>
-    <div id="root" class="w-full h-full flex flex-col justify-between"></div>
+    <div id="root" class="w-full min-h-screen flex flex-col"></div>
     <script type="module" src="./src/main.tsx"></script>
   </body>
 </html>

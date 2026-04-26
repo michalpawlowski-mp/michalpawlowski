@@ -11,23 +11,21 @@ const Contact: React.FC = () => {
         setNotification("Skopiowano do schowka!");
         setTimeout(() => setNotification(null), 3000);
       },
-      (err) => {
-        console.error("Błąd podczas kopiowania: ", err);
-      },
+      (err) => console.error("Błąd podczas kopiowania: ", err),
     );
   };
 
   return (
-    <section className="w-full p-2 flex flex-col items-center">
-      <h2 className="text-4xl font-bold mb-4 text-white">Opcje kontaktu</h2>
-      <div className="w-full flex md:flex-row flex-col items-center justify-center m-2">
+    <section className="w-full flex flex-col items-center justify-center flex-1 gap-5 px-4">
+      <h2 className="text-3xl font-bold text-white">Opcje kontaktu</h2>
+      <div className="flex md:flex-row flex-col items-center gap-3">
         {contactData.map((item) => (
           <div
             key={item.id}
-            className="bg-white/20 flex rounded-full overflow-hidden m-1"
+            className="flex items-center bg-[#1a1d27] border border-white/10 rounded-lg overflow-hidden"
           >
             <a
-              className="py-4 pl-4 pr-2 hover:bg-white/30 transition duration-300 ease-in-out cursor-pointer"
+              className="py-3 px-4 text-slate-300 hover:text-white hover:bg-[#252836] transition-colors text-sm"
               href={item.href}
             >
               {item.text}
@@ -37,13 +35,13 @@ const Contact: React.FC = () => {
               src={copy}
               alt={item.alt}
               loading="lazy"
-              className="py-4 pr-4 pl-2 hover:bg-white/30 transition duration-300 ease-in-out cursor-pointer"
+              className="py-3 px-3 border-l border-white/10 cursor-pointer hover:bg-[#252836] transition-colors"
             />
           </div>
         ))}
       </div>
       {notification && (
-        <div className="fixed bottom-20 bg-white/30 text-white py-2 px-4 rounded">
+        <div className="fixed bottom-8 bg-[#1a1d27] border border-white/10 text-slate-300 text-sm py-2 px-5 rounded-lg shadow-lg">
           {notification}
         </div>
       )}

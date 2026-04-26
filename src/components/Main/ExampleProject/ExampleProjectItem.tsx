@@ -12,13 +12,15 @@ const ExampleProjectItem: React.FC<Props> = ({ project }) => {
 
   return (
     <>
-      <div className="flex flex-col text-center justify-between items-center w-full md:w-1/3 bg-gray-700/50 p-4 md:mx-2 my-2 rounded-xl shadow-inner shadow-black transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-black/60 hover:bg-gray-700/70">
-        <h4 className="text-2xl mb-3">{project.title}</h4>
-        <p className="text-sm text-left pb-1">{project.miniDescription}</p>
+      <div className="flex flex-col text-center justify-between items-center w-full md:w-1/3 bg-[#1a1d27]/50 border border-white/8 p-5 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:border-indigo-500/40">
+        <h4 className="text-lg font-medium text-white mb-3">{project.title}</h4>
+        <p className="text-sm text-slate-400 text-left leading-relaxed">
+          {project.miniDescription}
+        </p>
         <ToggleButton
           content="Zobacz szczegóły"
           onClick={toggleVisibility}
-          className="mt-3"
+          className="mt-4"
         />
       </div>
       {isVisible && (

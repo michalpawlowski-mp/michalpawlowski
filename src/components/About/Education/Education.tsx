@@ -5,26 +5,21 @@ import ToggleButton from "../../UI/ToggleButton/ToggleButton";
 
 const Education: React.FC = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
-
-  const toggleVisibility: () => void = () => {
-    setIsVisible((prev) => !prev);
-  };
+  const toggleVisibility = () => setIsVisible((prev) => !prev);
 
   return (
-    <article className="flex flex-col items-center bg-black/50 md:mx-2 mt-2 p-3 rounded-3xl w-full md:w-1/2 shadow-sm shadow-gray-600">
-      <h2 className="text-3xl mb-2">Wykształcenie</h2>
-      <ToggleButton
-        content="Zobacz moje wykształcenie"
-        onClick={toggleVisibility}
-        className="rounded-full bg-white/10 hover:bg-white/20 shadow-sm shadow-gray-600"
-      />
+    <article className="flex flex-col items-center bg-[#1a1d27]/50 border border-white/8 rounded-xl p-5 w-full md:w-1/2 gap-3 m-1">
+      <h2 className="text-xl font-medium text-white">Wykształcenie</h2>
+      <ToggleButton content="Zobacz moje wykształcenie" onClick={toggleVisibility} />
       {isVisible && (
-        <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-40 backdrop-blur-sm p-2 ">
-          <div className="bg-white/10 p-2 rounded-2xl max-w-3xl w-full overflow-auto scrollbar-none h-max ">
+        <div className="fixed inset-0 bg-black/70 flex justify-center items-center z-40 backdrop-blur-sm p-4">
+          <div className="bg-[#1a1d27] border border-white/10 rounded-xl max-w-3xl w-full overflow-auto scrollbar-none p-4">
             <ToggleButton content="Zamknij" onClick={toggleVisibility} />
-            {educationData.map((item, index) => (
-              <EducationItem key={index} {...item} />
-            ))}
+            <div className="mt-4">
+              {educationData.map((item, index) => (
+                <EducationItem key={index} {...item} />
+              ))}
+            </div>
           </div>
         </div>
       )}

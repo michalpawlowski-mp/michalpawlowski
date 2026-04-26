@@ -8,12 +8,14 @@ interface CareerSectionProps {
 
 const CareerSection: React.FC<CareerSectionProps> = ({ title, data }) => {
   return (
-    <>
-      <p className="pb-3 text-2xl font-semibold">{title}</p>
+    <div className="mb-4">
+      <p className="text-base font-medium text-white mb-3 pb-2 border-b border-white/8">
+        {title}
+      </p>
       {data.map((item, index) => (
         <CareerItem key={index} {...item} />
       ))}
-    </>
+    </div>
   );
 };
 

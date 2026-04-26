@@ -9,7 +9,7 @@ type ButtonLinkProps = {
 
 const ButtonLink = ({ content, link, external = false }: ButtonLinkProps) => {
   const classes =
-    "flex rounded-2xl bg-slate-700 p-3 font-medium shadow-lg transition-all duration-300 hover:bg-gray-800 hover:translate-x-1";
+    "flex items-center rounded-lg bg-indigo-900 hover:bg-indigo-800 p-3 px-5 font-medium shadow-lg transition-all duration-200 hover:translate-x-0.5 text-white";
 
   const ButtonContent = (
     <>

@@ -13,7 +13,7 @@ const Links: React.FC<LinksProps> = ({ githubLink, websiteLink, onInfoClick }) =
         href={githubLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:bg-white/20 w-1/3 border-r-2 flex items-center p-2 justify-center"
+        className="hover:bg-[#252836] w-1/3 border-r border-white/8 flex items-center p-3 justify-center transition-colors"
       >
         <img src={github} alt="Link do repozytorium na githubie" loading="lazy" />
       </a>
@@ -21,13 +21,13 @@ const Links: React.FC<LinksProps> = ({ githubLink, websiteLink, onInfoClick }) =
         href={websiteLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:bg-white/20 w-1/3 flex items-center justify-center p-2"
+        className="hover:bg-[#252836] w-1/3 flex items-center justify-center p-3 transition-colors"
       >
         <img src={web} alt="link do strony projektu (live demo)" loading="lazy" />
       </a>
       <div
         onClick={onInfoClick}
-        className="hover:bg-white/20 w-1/3 border-l-2 p-2 flex items-center justify-center "
+        className="hover:bg-[#252836] w-1/3 border-l border-white/8 p-3 flex items-center justify-center cursor-pointer transition-colors"
       >
         <img src={info} alt="Więcej info o projekcie" loading="lazy" />
       </div>

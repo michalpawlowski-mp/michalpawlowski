@@ -3,7 +3,7 @@ import SkillGroup from "./SkillGroup";
 
 const Skills: React.FC = () => {
   return (
-    <article className="w-full md:w-3/5 mx-auto flex flex-col mr-1">
+    <article className="w-full md:w-3/5 flex flex-col gap-2 ">
       {skills.map((category) => (
         <SkillGroup
           key={category.title}

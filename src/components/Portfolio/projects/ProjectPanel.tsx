@@ -10,26 +10,30 @@ interface Props {
 
 const ProjectPanel: React.FC<Props> = ({ project, toggleVisibility }) => {
   return (
-    <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-40 backdrop-blur-sm p-2">
-      <div className="bg-white/10 p-2 rounded-2xl max-w-3xl w-full h-5/6 overflow-auto scrollbar-none">
-        <div className="flex items-center">
+    <div className="fixed inset-0 bg-black/70 flex justify-center items-center z-40 backdrop-blur-sm p-4">
+      <div className="bg-[#1a1d27] border border-white/10 p-4 rounded-xl max-w-3xl w-full h-5/6 overflow-auto scrollbar-none">
+        <div className="flex items-center mb-4">
           <ToggleButton content="Zamknij" onClick={toggleVisibility} />
-          <h4 className="text-2xl m-auto">{project.title}</h4>
+          <h4 className="text-xl font-medium text-white m-auto">{project.title}</h4>
         </div>
 
-        <div className="flex flex-col text-left p-2 my-3">
-          <p className="text-xl">Funkcjonalności:</p>
-          {project.features.map((feature, index) => (
-            <p key={index} className="text-sm mt-1">
-              ✅ {feature}
+        <div className="text-left p-2 mb-3">
+          <p className="text-sm font-medium text-slate-400 uppercase tracking-wider mb-2">
+            Funkcjonalności
+          </p>
+          {project.features.map((feature, i) => (
+            <p key={i} className="text-sm text-slate-300 mt-1 flex items-center gap-2">
+              <span className="text-indigo-400">✓</span> {feature}
             </p>
           ))}
         </div>
 
-        <div className="flex flex-col text-left mb-2">
-          <p className="text-xl">Opis</p>
-          {project.description.map((desc, index) => (
-            <p key={index} className="text-sm mt-2">
+        <div className="text-left mb-3">
+          <p className="text-sm font-medium text-slate-400 uppercase tracking-wider mb-2">
+            Opis
+          </p>
+          {project.description.map((desc, i) => (
+            <p key={i} className="text-sm text-slate-300 mt-2 leading-relaxed">
               {desc}
             </p>
           ))}

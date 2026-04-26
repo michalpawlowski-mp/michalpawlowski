@@ -2,14 +2,14 @@ import React from "react";
 import { SkillCategory } from "./skills.data";
 
 const SkillGroup: React.FC<SkillCategory> = ({ title, items, info }) => (
-  <div className="bg-black/50 rounded-2xl my-1 p-2  shadow-sm shadow-gray-600">
-    <p className="text-2xl text-center ">{title}</p>
-    <p className="text-sm text-center mb-2">{info}</p>
-    <ul className="flex flex-wrap justify-center items-center gap-2">
+  <div className="bg-[#1a1d27]/50 rounded-xl my-1 p-3 border border-white/8">
+    <p className="text-lg font-medium text-center text-white mb-1">{title}</p>
+    <p className="text-xs text-center text-slate-500 mb-3">{info}</p>
+    <ul className="flex flex-wrap justify-center gap-2">
       {items.map((skill) => (
         <li
           key={skill}
-          className="w-max text-center p-2 bg-white/10 hover:bg-white/20 rounded-2xl shadow-sm shadow-gray-600 "
+          className="text-sm px-3 py-1.5 bg-[#252836] hover:bg-[#2e3247] border border-white/8 rounded-lg text-slate-300 transition-colors"
         >
           {skill}
         </li>

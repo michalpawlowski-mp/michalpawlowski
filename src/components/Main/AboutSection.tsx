@@ -3,9 +3,9 @@ import Button from "./ButtonLink";
 
 const AboutSection = () => {
   return (
-    <section className="flex items-center justify-center w-full p-2">
+    <section className="flex items-center justify-center w-full p-4 gap-4">
       <div className="relative w-31.25 aspect-square shrink-0">
-        <div className="absolute inset-0 rounded-full overflow-hidden shadow-lg shadow-gray-400">
+        <div className="absolute inset-0 rounded-full overflow-hidden shadow-lg shadow-indigo-900">
           <div className="absolute inset-0 animate-[spin_4s_linear_infinite] bg-linear-to-r from-slate-900 via-slate-800 to-slate-700"></div>
           <img
             src={me}
@@ -14,9 +14,9 @@ const AboutSection = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col items-center text-center">
-        <p className="text-sm p-2">
-          Przejdź do zakładki „O mnie”, aby dowiedzieć się więcej.
+      <div className="flex flex-col items-start gap-2">
+        <p className="text-sm text-slate-400">
+          Przejdź do zakładki „O mnie", aby dowiedzieć się więcej.
         </p>
         <Button link="/about" content="Więcej o mnie" />
       </div>

@@ -3,20 +3,16 @@ import SocialMedia from "./SocialMedia/SocialMedia";
 
 const Banner: React.FC = () => {
   return (
-    <article className="flex items-center bg-black/50 mx-1 my-2 p-2 rounded-full w-full md:w-3/4  shadow-sm shadow-gray-600">
+    <article className="flex items-center bg-[#1a1d27] mx-1 my-2 p-3 rounded-xl w-full md:w-3/4 border border-white/8">
       <img
-        className="rounded-full border border-white"
+        className="rounded-full border border-white/20 w-14 h-14"
         src={me}
         alt="Michał Pawłowski"
         loading="lazy"
       />
-      <div className="flex flex-col justify-evenly h-full">
-        <div className="ml-2 w-full">
-          <h2 className="md:text-3xl sm:text-2xl text-xl text-shadow-lg">
-            Inż. Michał Pawłowski
-          </h2>
-          <h3>Junior Frontend Developer</h3>
-        </div>
+      <div className="flex flex-col ml-3 gap-1">
+        <h2 className="text-xl font-medium text-white">Inż. Michał Pawłowski</h2>
+        <h3 className="text-sm text-slate-400">Junior Frontend Developer</h3>
         <SocialMedia />
       </div>
     </article>

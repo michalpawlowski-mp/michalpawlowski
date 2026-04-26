@@ -9,13 +9,13 @@ const CareerItem = ({
   description,
 }: CareerDataProps) => {
   return (
-    <div className="p-4 mb-4 bg-black/20 rounded-3xl shadow shadow-white">
-      <p className="text-xs">{formatDate(startDate, endDate)}</p>
-      <p>{company}</p>
-      <p className="text-xs">{position}</p>
-      <ul className="p-0">
+    <div className="p-4 mb-3 bg-[#252836] border border-white/8 rounded-xl">
+      <p className="text-xs text-slate-500 mb-1">{formatDate(startDate, endDate)}</p>
+      <p className="text-white font-medium text-sm">{company}</p>
+      <p className="text-xs text-slate-400 mb-2">{position}</p>
+      <ul>
         {description.map((item, index) => (
-          <li key={index} className="text-sm">
+          <li key={index} className="text-sm text-slate-400 leading-relaxed">
             - {item}
           </li>
         ))}

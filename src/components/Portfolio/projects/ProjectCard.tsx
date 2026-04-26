@@ -11,24 +11,24 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
   const { isVisible, toggleVisibility } = useToggle();
 
   return (
-    <div className="md:w-100 bg-black/70 text-center flex flex-col items-center border-2 border-white rounded-2xl m-2 shadow-lg overflow-hidden">
-      <p className="text-2xl w-full border-b-2 border-white p-2">{project.title}</p>
+    <div className="w-72 bg-[#1a1d27] text-center flex flex-col border border-white/8 rounded-xl overflow-hidden hover:border-indigo-500/40 transition-colors">
+      <p className="text-base font-medium text-white w-full border-b border-white/8 py-3 px-3">
+        {project.title}
+      </p>
       <img
         src={project.images[0]}
         alt={project.title}
         className="w-full object-cover"
         loading="lazy"
       />
-
-      <div className="flex justify-center w-full border-t-2 border-b-2 border-white flex-wrap">
+      <div className="flex justify-center w-full border-t border-white/8 flex-wrap gap-1 p-2">
         {project.technologies.map((tech) => (
-          <img
+          <span
             key={tech.name}
-            src={tech.src}
-            alt={tech.name}
-            className=" m-2"
-            loading="lazy"
-          />
+            className="flex items-center gap-1 text-xs px-2 py-1 bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 rounded-md"
+          >
+            <img src={tech.src} alt={tech.name} className="w-3 h-3" loading="lazy" />
+          </span>
         ))}
       </div>
       <Links
