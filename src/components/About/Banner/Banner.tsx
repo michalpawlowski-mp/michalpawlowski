@@ -3,9 +3,9 @@ import SocialMedia from "./SocialMedia/SocialMedia";
 
 const Banner: React.FC = () => {
   return (
-    <article className="flex items-center bg-[#1a1d27] mx-1 my-2 p-3 rounded-xl w-full md:w-3/4 border border-white/8">
+    <article className="flex items-center bg-[#1a1d27]/50 mx-1 my-2 p-3 rounded-xl w-full md:w-3/4 border border-white/8">
       <img
-        className="rounded-full border border-white/20 w-14 h-14"
+        className="rounded-lg border border-white/20"
         src={me}
         alt="Michał Pawłowski"
         loading="lazy"
