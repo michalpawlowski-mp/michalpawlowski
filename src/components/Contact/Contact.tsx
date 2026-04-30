@@ -35,7 +35,7 @@ const Contact: React.FC = () => {
               src={copy}
               alt={item.alt}
               loading="lazy"
-              className="py-3 px-3 border-l border-white/10 cursor-pointer hover:bg-[#252836] transition-colors"
+              className="py-2 px-3 border-l border-white/10 cursor-pointer hover:bg-[#252836] transition-colors"
             />
           </div>
         ))}

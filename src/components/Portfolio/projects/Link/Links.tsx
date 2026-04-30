@@ -8,7 +8,7 @@ interface LinksProps {
 
 const Links: React.FC<LinksProps> = ({ githubLink, websiteLink, onInfoClick }) => {
   return (
-    <div className="flex justify-center w-full">
+    <div className="flex justify-center w-full border-t border-white/8">
       <a
         href={githubLink}
         target="_blank"

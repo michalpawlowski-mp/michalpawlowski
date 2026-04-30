@@ -8,7 +8,7 @@ const Education: React.FC = () => {
   const toggleVisibility = () => setIsVisible((prev) => !prev);
 
   return (
-    <article className="flex flex-col items-center bg-[#1a1d27]/50 border border-white/8 rounded-xl p-5 w-full md:w-1/2 gap-3 m-1">
+    <article className="flex flex-col items-center bg-[#1a1d27]/50 border border-white/8 rounded-xl p-5 w-full md:w-1/2 gap-3 mt-1 md:ml-2">
       <h2 className="text-xl font-medium text-white">Wykształcenie</h2>
       <ToggleButton content="Zobacz moje wykształcenie" onClick={toggleVisibility} />
       {isVisible && (
