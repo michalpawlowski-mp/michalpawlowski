@@ -9,9 +9,10 @@ const SocialMedia: React.FC = () => {
             href={href}
             target="_blank"
             rel="noopener noreferrer"
+            title={id}
             className="flex items-center p-1.5 rounded-lg border border-white/10 hover:bg-[#252836] hover:border-white/20 transition-colors focus:outline-none focus:ring-1 focus:ring-indigo-500"
           >
-            <img className="rounded-full w-5 h-5" src={icon} alt="" loading="lazy" />
+            <img className="rounded-full w-5 h-5" src={icon} alt={id} loading="lazy" />
           </a>
         </li>
       ))}

@@ -14,8 +14,7 @@ export const supportData: CareerDataProps[] = [
   {
     startDate: "2021-12",
     endDate: "2022-08",
-    company:
-      "Instytut Informatyki Uniwersytetu Kazimierza Wielkiego w Bydgoszczy",
+    company: "Instytut Informatyki Uniwersytetu Kazimierza Wielkiego w Bydgoszczy",
     position: "Dział Techniczny",
     description: [
       "Wsparcie techniczne systemów i sprzętu komputerowego",
