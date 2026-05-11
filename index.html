@@ -21,7 +21,10 @@
     <link rel="preload" href="/background/bg.svg" as="image" />
     <title>Michał Pawłowski | MP.Dev</title>
     <meta name="theme-color" content="#080b12" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
     <meta name="color-scheme" content="dark" />
   </head>
   <body
@@ -29,13 +32,106 @@
   >
     <noscript>
       <div
-        class="fixed inset-0 z-50 flex items-center justify-center bg-[#0f1117] text-white p-8 text-center"
+        style="
+          position: fixed;
+          inset: 0;
+          z-index: 50;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #0f1117;
+          color: #ffffff;
+          padding: 24px;
+        "
       >
-        <h1 class="text-2xl mb-4">JavaScript jest wyłączony</h1>
-        <p>
-          Ta strona wymaga włączonego JavaScriptu, aby działać poprawnie.<br />Proszę
-          włączyć JavaScript w ustawieniach przeglądarki.
-        </p>
+        <div style="max-width: 672px; width: 100%; text-align: center">
+          <h1 style="font-size: 36px; font-weight: 700; margin: 0 0 8px">
+            Michał Pawłowski
+          </h1>
+          <p style="font-size: 20px; color: #9ca3af; margin: 0 0 32px">
+            Frontend Developer • MP.Dev
+          </p>
+
+          <div
+            style="
+              background: #1a1f2e;
+              border: 1px solid rgba(255, 255, 255, 0.12);
+              border-radius: 16px;
+              padding: 32px;
+              margin-bottom: 40px;
+            "
+          >
+            <p style="font-size: 18px; line-height: 1.7; margin: 0 0 24px">
+              Ta strona używa JavaScript do animacji i interaktywności.<br />
+              <strong>Proszę włącz JavaScript</strong>, aby zobaczyć pełną
+              wersję.
+            </p>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              gap: 16px;
+              border-top: 1px solid rgba(255, 255, 255, 0.12);
+              padding-top: 24px;
+            "
+          >
+            <a
+              href="mailto:kontakt@michalpawlowski.pl"
+              style="
+                font-size: 14px;
+                color: #9ca3af;
+                text-decoration: none;
+                border: 2px solid rgba(255, 255, 255, 0.12);
+                border-radius: 10px;
+                padding: 5px;
+              "
+              >✉️ kontakt@michalpawlowski.pl</a
+            >
+            <a
+              href="tel:+48728117024"
+              style="
+                font-size: 14px;
+                color: #9ca3af;
+                text-decoration: none;
+                border: 2px solid rgba(255, 255, 255, 0.12);
+                border-radius: 10px;
+                padding: 5px;
+              "
+              >📞 +48 728 117 024</a
+            >
+            <a
+              href="https://www.linkedin.com/in/michalpawlowski-mp/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="
+                font-size: 14px;
+                color: #9ca3af;
+                text-decoration: none;
+                border: 2px solid rgba(255, 255, 255, 0.12);
+                border-radius: 10px;
+                padding: 5px;
+              "
+              >LinkedIn</a
+            >
+            <a
+              href="https://github.com/michalpawlowski-mp"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="
+                font-size: 14px;
+                color: #9ca3af;
+                text-decoration: none;
+                border: 2px solid rgba(255, 255, 255, 0.12);
+                border-radius: 10px;
+                padding: 5px;
+              "
+              >GitHub</a
+            >
+          </div>
+        </div>
       </div>
     </noscript>
     <div id="root" class="w-full min-h-screen flex flex-col"></div>
