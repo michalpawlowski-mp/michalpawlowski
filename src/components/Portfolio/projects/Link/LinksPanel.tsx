@@ -21,7 +21,7 @@ const LinksPanel: React.FC<LinksPanelProps> = ({ githubLink, websiteLink }) => {
         target="_blank"
         rel="noopener noreferrer"
         href={websiteLink}
-        className="flex items-center justify-center gap-2 py-2 w-1/2 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-white transition-colors text-sm"
+        className="flex items-center justify-center gap-2 py-2 w-1/2 bg-[#252836] hover:bg-[#2e3247] border border-white/10 rounded-lg text-slate-300 hover:text-white transition-colors text-sm"
       >
         <img src={web} alt="zobacz projekt w praktyce" loading="lazy" />
         <p>Zobacz projekt</p>

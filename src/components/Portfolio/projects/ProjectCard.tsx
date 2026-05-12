@@ -11,7 +11,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
   const { isVisible, toggleVisibility } = useToggle();
 
   return (
-    <div className="w-72 bg-[#1a1d27] text-center flex flex-col border border-white/8 rounded-xl overflow-hidden hover:border-indigo-500/40 transition-colors">
+    <div className="w-100 bg-[#1a1d27] text-center flex flex-col border border-white/8 rounded-xl overflow-hidden hover:border-indigo-500/40 transition-colors">
       <p className="text-base font-medium text-white w-full border-b border-white/8 py-3 px-3">
         {project.title}
       </p>
@@ -27,7 +27,12 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
             key={tech.name}
             className="flex items-center gap-1 text-xs px-2 py-1 bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 rounded-md"
           >
-            <img src={tech.src} alt={tech.name} className="w-3 h-3" loading="lazy" />
+            <img
+              src={tech.src}
+              alt={tech.name}
+              className="w-3 h-3"
+              loading="lazy"
+            />
           </span>
         ))}
       </div>
