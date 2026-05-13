@@ -2,12 +2,15 @@ import { Link } from "react-router-dom";
 import Nav from "./Nav/Nav";
 import { useTypewriter } from "../../hooks/useTypewriter";
 import { useNavigation } from "../../hooks/useNavigation";
+import { useBodyScrollLock } from "../../hooks/useBodyScrollLock";
 
 const PHRASES = ["ichał Pawłowski ", "P.Dev "];
 
 const Header: React.FC = () => {
   const { isNavOpen, navRef, buttonRef, toggleNav } = useNavigation();
   const text = useTypewriter(PHRASES);
+
+  useBodyScrollLock(isNavOpen);
 
   return (
     <header className="flex flex-row items-center justify-between w-full px-6 py-4 border-b border-white/5">

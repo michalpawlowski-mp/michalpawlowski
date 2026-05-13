@@ -2,6 +2,7 @@ import { ProjectsDataProps } from "../../../types/ProjectsProps";
 import Technologies from "./Technologies/Technologies";
 import LinksPanel from "./Link/LinksPanel";
 import ToggleButton from "../../UI/ToggleButton/ToggleButton";
+import { useBodyScrollLock } from "../../../hooks/useBodyScrollLock";
 
 interface Props {
   project: ProjectsDataProps;
@@ -9,14 +10,14 @@ interface Props {
 }
 
 const ProjectPanel: React.FC<Props> = ({ project, toggleVisibility }) => {
+  useBodyScrollLock(true);
+
   return (
     <div className="fixed inset-0 bg-black/70 flex justify-center items-center z-40 backdrop-blur-sm p-4">
       <div className="bg-[#1a1d27] border border-white/10 p-4 rounded-xl max-w-3xl w-full h-5/6 overflow-auto scrollbar-none">
         <div className="flex items-center mb-4">
           <ToggleButton content="Zamknij" onClick={toggleVisibility} />
-          <h4 className="text-xl font-medium text-white m-auto">
-            {project.title}
-          </h4>
+          <h4 className="text-xl font-medium text-white m-auto">{project.title}</h4>
         </div>
 
         <div className="text-left mb-3">
@@ -24,10 +25,7 @@ const ProjectPanel: React.FC<Props> = ({ project, toggleVisibility }) => {
             Funkcjonalności
           </p>
           {project.features.map((feature, i) => (
-            <p
-              key={i}
-              className="text-sm text-slate-300 mt-1 flex items-center gap-2"
-            >
+            <p key={i} className="text-sm text-slate-300 mt-1 flex items-center gap-2">
               <span className="text-green-500">✓</span> {feature}
             </p>
           ))}
