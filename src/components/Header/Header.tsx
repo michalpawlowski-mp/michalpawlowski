@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import Nav from "./Nav/Nav";
 import { useTypewriter } from "../../hooks/useTypewriter";
 import { useNavigation } from "../../hooks/useNavigation";

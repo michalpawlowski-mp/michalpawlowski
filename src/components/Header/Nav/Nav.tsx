@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import { navLinks } from "./nav.data";
 
 interface NavProps {

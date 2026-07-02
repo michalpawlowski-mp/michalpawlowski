@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import icon from "../../assets/icons/ui/arrow.svg";
 
 type ButtonLinkProps = {
